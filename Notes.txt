@@ -1,0 +1,1 @@
+Convertions: https://markdowntohtml.com/ seems to support Hebrew but not footnotes
