@@ -1,1 +1,3 @@
-Convertions: https://markdowntohtml.com/ seems to support Hebrew but not footnotes
+Convertions: 
+- https://markdowntohtml.com/ seems to support Hebrew but not footnotes
+- https://pandoc.org/try/ can do Hebrew and footnotes but requires install
