@@ -90,13 +90,20 @@ If we simulate "double every 4 days" *and nothing else*, on a population startin
 
 This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
 
+זה **הגידול האקספוננציאלי**. מתחיל ק'טן, ואז מתפוצץ. "זאת רק שפעת" ואז "שפעת לא יוצרת קברים המוניים בערים עשירות".
+
 ![](pics/exponential.png)
 
 But, this simulation is wrong. Exponential growth, thankfully, can't go on forever. One thing that stops a virus from spreading is if others *already* have the virus:
 
+אבל הסימולציה הזו לא נכונה. גידול אקספוננציאלי, למרבה המצזל, לא יכול להמשך לנצח. אחד הדברים שעוצר את ההתפשטות של הוירוס הוא כשלאחרים *כבר יש אותו*:
+
 ![](pics/susceptibles.png)
 
 The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i></icon>s, **but the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s.**
+
+ככל שיש יותר <icon i></icon> מי שהוא S נהיה <icon i></icon> מהר יותר, **אבל, ככל שיש פחות <icon s></icon>, מי שהוא <icon s></icon> נהיה <icon i></icon> *לאט יותר*.**
+
 
 How's this change the growth of an epidemic? Let's find out:
 
