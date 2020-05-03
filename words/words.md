@@ -22,6 +22,7 @@
 	</div>
 </div>
 
+אם אמרו לך פעם "הדבר היחיד שצריך לפחד ממנו הוא הפחד עצמו" 
 "The only thing to fear is fear itself" was stupid advice.
 
 Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
@@ -48,8 +49,12 @@ So, buckle in: we're about to experience some turbulence.
 </div>
 
 Pilots use flight simulators to learn how not to crash planes.
+טייסים מתשמשים בסימולטורים כדי ללמוד איך לרסק מטוסים ולצאת מזה בשלום.
 
+**אפידימיולוגים משמשים בסימולטרים כדי ללמוד איך להוציא את האנושות בשלום ממגפות.**
 **Epidemiologists use epidemic simulators to learn how not to crash humanity.**
+
+ אז למה לא נבנה לנו סימולטור מגפות מאד *מאד* פשטני! בסימולטור הזה, אנשים מדבקים יכולים להפוך אנשים אחרים לאנשים מדבקים.  
 
 So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
 
