@@ -107,17 +107,27 @@ The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i>
 
 How's this change the growth of an epidemic? Let's find out:
 
+איך זה משפיע על התפשטות המגיפה? בואו נראה:
+
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
 This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
 
+זו **העקומה הלוגיסטית**. מתחילה בקטן, מתפוצצת, ואז שוב דועכת.
+
 But, this simulation is *still* wrong. We're missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) "recovering" with lung damage, or 3) dying.
+
+אבל הסימולציה הזו עדיין לא נכונה. אנחנו מפספסים את העובדה ש I אנשים מדבקים בסופו של דבר מפסיקים להדביק. או שהם מחלימים, או שהם "מחלימים" עם נזק לריאות, או שהם מתים.
 
 For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
 
+לשם הפשטות, נניח שכל I המדביקים נהיים R מחלימים. (רק נזכור שבמציאות חלק מהם מתים) R לא יכולים להדביק שוב, ונניח *לעת עתה* שהם נשארים חסינים לשארית חייהם.
+
 With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <icon i></icon>:**
+
+ההערכה היא שעם COVID-19 אתה I מדבק למשך 10 ימים *בממוצע*. זה אומר שחלק יחלימו לפני שיעברו 10 ימים, וחלק אחרי.
 
 [^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
 
@@ -127,15 +137,21 @@ With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on
 
 This is the opposite of exponential growth, the **exponential decay curve.**
 
+זה ההפך מגידול אקפוננציאלי - זו עקומה של **דעיכה אקספוננציאלית**.
+
 Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+
+עכשיו, מה יקרה אם נעשה סימולציה של עקומה לוגיסטית *עם* התאוששות?
 
 ![](pics/graphs_q.png)
 
 Let's find out.
 
-<b style='color:#ff4040'>Red curve</b> is *current* cases <icon i></icon>,    
-<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>),
-starts at just 0.001% <icon i></icon>:
+בואו נראה.
+
+<b style='color:#ff4040'>העקומה האדומה</b> היא מספר המקרים *הנוכחי* <icon i></icon>,    
+<b style='color:#999999'>העקומה האפורה</b> היא *סך כל* המקרים (נוכחי + מחלימים <icon r></icon>),
+מחילה בסך הכל ב 0.001% <icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
