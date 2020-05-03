@@ -54,9 +54,11 @@ Pilots use flight simulators to learn how not to crash planes.
 **אפידימיולוגים משמשים בסימולטרים כדי ללמוד איך להוציא את האנושות בשלום ממגפות.**
 **Epidemiologists use epidemic simulators to learn how not to crash humanity.**
 
- אז למה לא נבנה לנו סימולטור מגפות מאד *מאד* פשטני! בסימולטור הזה, אנשים מדבקים יכולים להפוך אנשים אחרים לאנשים מדבקים.  
+
 
 So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
+
+ אז למה לא נבנה לנו סימולטור מגפות מאד *מאד* פשטני! בסימולטור הזה, <icon i></icon> אנשים מדבקים יכולים להפוך <icon s></icon>  אנשים אחרים למדבקים.  
 
 ![](pics/spread.png)
 
