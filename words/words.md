@@ -96,7 +96,7 @@ This is the **exponential growth curve.** Starts small, then explodes. "Oh it's 
 
 But, this simulation is wrong. Exponential growth, thankfully, can't go on forever. One thing that stops a virus from spreading is if others *already* have the virus:
 
-אבל הסימולציה הזו לא נכונה. גידול אקספוננציאלי, למרבה המצזל, לא יכול להמשך לנצח. אחד הדברים שעוצר את ההתפשטות של הוירוס הוא כשלאחרים *כבר יש אותו*:
+אבל הסימולציה הזו לא נכונה. גידול אקספוננציאלי, למרבה המזל, לא יכול להמשך לנצח. אחד הדברים שעוצר את ההתפשטות של הוירוס הוא כשלאחרים *כבר יש אותו*:
 
 ![](pics/susceptibles.png)
 
@@ -151,7 +151,7 @@ Let's find out.
 
 <b style='color:#ff4040'>העקומה האדומה</b> היא מספר המקרים *הנוכחי* <icon i></icon>,    
 <b style='color:#999999'>העקומה האפורה</b> היא *סך כל* המקרים (נוכחי + מחלימים <icon r></icon>),
-מחילה בסך הכל ב 0.001% <icon i></icon>:
+מתחילה בסך הכל ב 0.001% <icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
@@ -159,9 +159,18 @@ Let's find out.
 
 And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
 
+וזה המקור של העקומה שאנחנו רואים בכל מקום! זו לא עקומת פעמון, זו לא עקומה שאנחנו מכירים ממקום אחר אבל זו העקומה שהשתלטה על החיים של כולנו ואותה אנחנו מנסים לשטח!
+
 This is the the **SIR Model**,[^sir]    
 (<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
 the *second*-most important idea in Epidemiology 101:
+
+זה המודל המכונה **SIR Model**
+(<icon s></icon>**S**usceptible - פגיעים <icon i></icon>**I**nfectious - מדבקים <icon r></icon>**R**ecovered - מחלימים) 
+
+the *second*-most important idea in Epidemiology 101:
+הרעיון *השני* הכי חשוב במבוא לאפידמיולוגיה:
+
 
 [^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
@@ -169,20 +178,30 @@ the *second*-most important idea in Epidemiology 101:
 
 **NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
 
+**שימו לב: הסימולציות שמשמשות לקבלת החלטות הרבה*הרבה* יותר מורכבות מזה!** אבל מודל SIR יכול עדיין להסביר כמה ממצאים מרכזיים, אפילו אם הוא מתעלם מכמה ניואנסים.
+
 Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+
+למעשה, הואו נוסיף עוד קצת ניואנס: לפני שS נהיה I, הוא נהיה Eנשא. זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
 
 ![](pics/seir.png)
 
 (This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
 
+)הגרסה הזו של המודל מכונה **SEIR Model*** והאות "E" פירושה E "Exposed". (שימו לב שהמילה Exposed משמשת בשפה היום יומית לתאר מישהו שנחשף לנגיף אבל אולי לא נדבק. כאו הכוונה היא למישהו שנדבק בוודאות אבל עדיין לא מדבק)
+
 [^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
 For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
 
+ל COVID-19, ההערכה היא שאתה E - .למשך 3 ימים, *בממוצע* נשא-אבל-אלא-מדבק
+מה יקרה אם נוסיף את זה לסימולציה?
+
+
 [^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <icon e></icon>),    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>):
+העקומות <b style='color:#ff4040'> האדומה <b style='color:#FF9393'>+ הוורודה</b> ביחד</b> הן כמות המקרים *הנוכחית* (מדבקים <icon i></icon> + נשאים <icon e></icon>),    
+<b style='color:#888'>העקומה האפורה</b> היא *סך כל* המקרים (כמות מקרים נוכחית + מחלימים <icon r></icon>):
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
@@ -190,11 +209,17 @@ For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-in
 
 Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
 
+לא הרבה השתנה, משך הזמן שבו אתה נשאר <icon e></icon> נשא משנה את היחס בין <icon e></icon>-ל-<icon i></icon>, ו*מתי* כמות המקרים תגיע לשיא, אבל אבל *הגובה* של השיא הזה, וכמות המקרים הכללית בסופו של דבר, לא משתנה.
+
 Why's that? Because of the *first*-most important idea in Epidemiology 101:
+
+למה? בגלל העיקרון *הראשון* של מבוא לאפידימיולוגיה:
 
 ![](pics/r.png)
 
 Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
+
+
 
 ![](pics/r2.png)
 
