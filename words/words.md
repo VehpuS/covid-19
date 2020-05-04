@@ -219,21 +219,34 @@ Why's that? Because of the *first*-most important idea in Epidemiology 101:
 
 Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
 
-
+שמסמל את ה "Reproduction number". המספר הממוצע של אנשים שI מדביק *לפני* הוא מחלים )או נפטר)
 
 ![](pics/r2.png)
 
 **R** changes over the course of an outbreak, as we get more immunity & interventions.
 
+**R** הוא זה שמשנה את הכיוון של ההתפרצות ככל שאנחנו מפתחים יותר חסינות או מתערבים במצב בכל מני דרכים.
+
 **R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
+
+
+**R<sub>0</sub>** הןא הערך של R *בתחילת ההתפרצות, לפני שאנשים התחילו לפתח עמידות ולפני שהתחלנו לנקוט באמצעים לריסון ההתפרצות*. R<sub>0</sub> משקף טוב יותר את העוצמה של הנגיף עצמו, ועדיין הוא עשוי להשתנות ממקום למקום. למשל, R<sub>0</sub> גבוה יותר ערים צפופות מאשר ביישובים חקלאיים.
 
 (Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
 
+)רוב הכתבות החדשות - ואפילו חלק מהמאמרים האקדמיים! - מבלבלים בין R ל R<sub>0</sub>(
+
 The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
+
+הערך של R<sub>0</sub> לשפעת העונתית הוא בערך 1.28[^r0_flu]. זה אומר, ש*בתחילת* התפרצות של שפעת, כל <icon i></icon> מדביק  1.28 אחרים *בממוצע*. (אם נשמע לכם מוזר שהמספר הזה הוא לא מספר שלם, לאמא הממוצעת יש 2.4 ילדים. זה לא אומר שיש כל מני חצאי ילדים שמסתובבים בחוץ.)
+
 
 [^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
 The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one *not-yet-finalized* study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]
+
+מעריכים ש R<sub>0</sub> ל COVID-19 הוא בערך 2.2,[^r0_covid] למרות שמחקר אחד *לא סופי* מעריך אותו ב !5.7(!) in Wuhan.[^r0_wuhan]
+
 
 [^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
@@ -241,9 +254,14 @@ The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though 
 
 In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
 
+בסימולציה שלנו - *בתחילת ההתפרצות, בממוצע* - I מדביק מישהו כל 4 ימים, למשך 10 ימים. "4 ימים" נכנס לתוך "10 ימים" פעמיים וחצי. זה אומר ש - *בתחילת ההתפרצות, בממוצע* - כל I ידביק 2.5 אחרים. לכן R0=2.5. )הסתייגויות:[^r0_caveats_sim]( 
+
+
 [^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
 
 **Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time & new-infection time:**
+
+** שחקו עם מחשבון R0 הזה כדי לראות איך R0 מושפע מזמן ההחלמה והזמן להדבקות חדשות:**
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
@@ -251,13 +269,20 @@ In our simulations – *at the start & on average* – an <icon i></icon> infect
 
 But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
 
+אבל צריך לזכור, ככל שיש פחות S, לוקח יותק זמן ל S להפוך להיות I. הערך של R *עכשיו* תלוי לא רק בערך *הבסיסי* שלו (R0) אלא *גם* בכמה אנשים כבר לא S חשופים )לדוגמא, אנשים שהחלימו ופיתחו חסינות טבעית(
+
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
 When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
 
+
+כשלמספיק אנשים יש חסינות, R>1, והמגיפה נעצרת! המצב הזה נקרא **חסינות עדר**. במקרה של שפעת, חסינות עדר מושגת *באמצעות חיסון*. לנסות לתת לאנשים להידבק כדי להשיג "חסינות עדר טבעית" זה רעיון *איום ונורא*. (אבל אולי לא מהסיבות שאתם חושבים! תיכף נסביר.) 
+
 Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:
+
+בואו נשחק שוב עם מודל SEIR, אבל הפעם נראה את R0, ערך R, והסף שממנו אנחנו משיגים חסינות עדר:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
@@ -265,15 +290,26 @@ Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, an
 
 **NOTE: Total cases *does not stop* at herd immunity, but overshoots it!** And it crosses the threshold *exactly* when current cases peak. (This happens no matter how you change the settings – try it for yourself!)
 
+** שימו לב: המספר הכללי של המקרים *לא מפסיק לעלות* כשמגיעים לחסינות עדר. הוא ממשיך לטפס ** והוא חוצה את הסף של חסינות העדר בדיוק כשכמות המקרים מגיעה לשיא שלה (ולא משנה איך תשנו את ההגדרות - נסו בעצמכם)
+
 This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
 
+זה קורה בגלל שכשיש יותר אנשים שאינם S מסף החסינות, אנחנו מקבלים R>1. וכש R>1 כמות המקרים החדשים מספיקה לגדול - וזה השיא.
+
 **If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
+
+** אם תצאו מהמאמר הזה אם דבר אחד - הנה הדבר הזה ** - זו דיאגרמה מסובכת במיוחד אז קחו כמה דקות להפנים אותה:
 
 ![](pics/r3.png)
 
 **This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!**
 
+**זה אומר שאנחנו לא חייבים לעצור את כל ההדבקות, או אפילו קרוב לזה, כדי לעצור את המגיפה!**
+
 It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
+
+זה מרגיש פרדוקסלי. COVID-19 היא מחלה מדבקת ביותר, אבל כדי לעצור אותה, אנחנו צריכים לעצור יותר מ 60% מההדבקות. 60% זה אולי לא ציון מרשים במיוחד בבית הספר אבל אם R0=2.5, ונצליח להקטין אותו ב 61% נקבל R = 0.975, וזה פחות מ1, המגיפה נעצרה! )הנוסחא המדוייקת:[^exact_formula](
+
 
 [^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
     
@@ -291,11 +327,19 @@ It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" n
 
 (If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a "Sandbox Mode" at the end of this guide, where you can plug in your *own* numbers, and simulate what happens.)
 
+)אם נראה לכם שהערך של R0 או מספר אחר בסימולציה הזו נמוך/גבוה מדי, זה מצויין! בסוף המאמר יש סימולטור בוא תוכלו להזין את המספרים *שלכם* ולראות מה יוצא(
+
 *Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:
+
+*כל* מה שאנחנו עושים כדי להתמודד עם המגיפה הזו - שטיפת ידיים, ריחוק חברתית, סגרים, בידוד, מעקב מגעים, מסיכות ואפילו" חסינות עדר" *כולם* מנסים להשיג אותה מטרה:
 
 Getting R < 1.
 
+להגיע ל R>1.
+
 So now, let's use our "epidemic flight simulator" to figure this out: How can we get R < 1 in a way **that also protects our mental health *and* financial health?**
+
+עכשיו, בואו נשתמש בסימולטור שלנו כדי לבוק איך אנחנו יכולים להגיע ל R > 1 ש**שומרת על הבריאות הנפשית והפיננסית שלנו**.
 
 Brace yourselves for an emergency landing...
 
@@ -303,14 +347,21 @@ Brace yourselves for an emergency landing...
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
         <div>The Next Few Months</div>
+	    <div>החודשים הקרובים</div>
     </div>
 </div>
 
 ...could have been worse. Here's a parallel universe we avoided:
 
+...יכלו להיות יותר גרועים. הנה כמה יקומים מקבילים שלא הגענו אליהם
+
 ###Scenario 0: Do Absolutely Nothing
 
+###תרחיש 0: לא לעשות שום דבק
+
 Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
+
+בערך 1 מכל 20 נדבקים ב COVID-19 מגיע לטיפול נמרץ.[^icu_covid] במדינה עשירה כמו ארצות הברית, יש מיטת טיפול נמרץ אחת לכל 3,400 אנשים.[^icu_us] לכן בארצות הברית אפשר לטפל במצב שבו 20 מכל 3,400 אנשים נדבקים - או 0.6% מהאוכלוסיה. 
 
 [^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
 
@@ -318,20 +369,34 @@ Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Car
 
 Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
 
+הנה מה שהיה קורה אם לא היינו עושים כלום, בהנחה שהיינו מגדילים את כמות המיטות ל 2% (יותר מפי 3):
+
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
 Not good.
 
+לא טוב.
+
 That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
 (remember: total cases *overshoots* herd immunity)
 
+
+זה מה שגילה [המחקר של איפיריאל קולג' מה-16 למרץ](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) אם לא נעשה כלום יגמרו לנו המיטות במצב שבו 80% מהאוכלוסיה נדבקהץ
+
+
 Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
+
+אפילו אם רק 0.5% מהנדבקים מתים - הנחה נדיבה במצב שבו נגמרו המיטות בטיפול נמרץ, במדינה כמו ארצות הברית, עם 300 מיליון אנשים, 0.5% מתוך 80% מתוך 300 מיליון = 1.2 מיליון מתים...
 
 (Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
 
+)הרבה אתרי חדשות ופוסטים במדיה החברתית אומרים "80%" ידבקו *בלי* להגיד "אם לא נעשה כלום". הופכים פחד לקליקים.(
+
 ###Scenario 1: Flatten The Curve / Herd Immunity
+
+###תרחיש 1: משטחים את העקוה/חסינות עדר
 
 The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
 
