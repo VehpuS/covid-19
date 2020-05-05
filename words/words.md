@@ -25,9 +25,19 @@
 אם אמרו לך פעם "הדבר היחיד שצריך לפחד ממנו הוא הפחד עצמו" 
 "The only thing to fear is fear itself" was stupid advice.
 
+והעיקר, אמרו לנו, לא לפחד כלל
+
 Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
 
+אין צורך לאגור נייר טואלט, אבל יש מקום לקצת פחד בריא. השאלה היא איך משתמשי בפחד הזה כדי להתמודד עם הבעיות של עכשיו ולהתכונן למה שמצפה לנו.
+
 Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
+
+גם אנחנו (Marcel, epidemiologist + Nicky, art/code) מודאגים. לכן הכנו את הסימולטור הזה ואתם מוזמנים להשתמש בו כדי להפוך את הפחד שלכם להבנה:
+
+* **החודשים האחרונים** )מבוא לאפידימיולוגיה, מודל SEIR, R ו R<sub>0</sub>(
+* **החודשים הקרובים** )סגרים, מעקב מגעים, מסיכות(
+* **השנים הקרובות** )איבוד חסינות? יהיה חיסון?(
 
 * **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
 * **The Next Few Months** (lockdowns, contact tracing, masks)
@@ -35,26 +45,30 @@ Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you 
 
 This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
 
+המדריך הזה (פורסם בתחילת מאי →[^timestamp]) והוא מיועד לתת לכם תקווה *וגם* פחד. כדי לנצח את COVID-19 **בדך שגם תשמו על הבריאות הנפשית והכלכלית שלנו** אנחנו צריכים אופטימיות כדי לתכנן תכניות ופסימיות כדי לתכנן תכניות גיבוי. כמו שאמר Gladys Bronwyn *"האופטימי ממציא את המטוס והפסימי ממציא את המצנח."*2020
+
 [^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
     
     **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
 
 So, buckle in: we're about to experience some turbulence.
 
+נצא לדרך:
+
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Last Few Months</div>
+        <div>החודשים האחרונים</div>
     </div>
 </div>
 
 Pilots use flight simulators to learn how not to crash planes.
 טייסים מתשמשים בסימולטורים כדי ללמוד איך לרסק מטוסים ולצאת מזה בשלום.
 
-**אפידימיולוגים משמשים בסימולטרים כדי ללמוד איך להוציא את האנושות בשלום ממגפות.**
+
 **Epidemiologists use epidemic simulators to learn how not to crash humanity.**
 
-
+**אפידימיולוגים משמשים בסימולטרים כדי ללמוד איך להוציא את האנושות בשלום ממגפות.**
 
 So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
 
@@ -1029,7 +1043,11 @@ Even under the *worst* worst-case scenario... life perseveres.
 
 Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
 
+!אולי תרצו לנסות הנחות אחרות או לבדוק את את הדרך שלכם לצאת מהמצב הזה
+
 **Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
+
+**הנה סימולציה שבה תוכלו לשחק ב*כל* המספרים!**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
@@ -1037,32 +1055,50 @@ Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s
 
 This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
 
+הסימולטור הבסיסי הזה לימוד אותנו כמה דברים, וענה לנו על כמה שאלות לגבי החודשים האחרונים, החודשים הקרובים והשנים הבאו.
+
 So finally, let's return to...
+
+אז בואו נחזור ל...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Now</div>
+        <div>עכשיו</div>
     </div>
 </div>
 
 Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
 
+המטוס שקע, אנחנו על הרפסודה המתנפחת. הגיע הזמן למצוא יבשה.[^dry_land]
+
 [^dry_land]: Dry land metaphor [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
 Teams of epidemiologists and policymakers ([left](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [right](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), and [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) have come to a consensus on how to beat COVID-19, while protecting our lives *and* liberties.
 
+צוותים של קובעי מדינות ואפידימיולוגים הגיעו להסכמה לגבי הדרך שבה נביס את COVID-19 תוך כדי שמירה על החיים שלנו ועל החרויות שלנו.
+
 Here's the rough idea, with some (less-consensus) backup plans:
+
+הנה התמצית:
 
 ![](pics/plan.png)
 
 So what does this mean for YOU, right now?
 
+אז מה כל זה אומר *לנו* עכשיו?
+
 **For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
+
+**לכולם:** לכבד את הסגר כדי שנוכל לצאת מהשלב הראשון במהירות. להמשיך לשטוף ידיים. לחבוש מסיכות. להוריד את האפליקציות לאיתור מגעים כשיהיו מוכנות. לשמור על הבריאות, נפשית וגופנית!
 
 **For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
 
+**לקובעי מדיניות:** דאגו לתמיכה באנשים שנאלצים להתבודד. דאגו למעקב אחרי מגעים, באמצעות אפליקציות רלוונטיות. עודדו השקעה בדברים שצריך לפתח כמו...
+
 **For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope. 
+
+**לאנשים שבונים דברים:** אנחנו צריכים בדיקות, מכשירי הנשמה, ציוד מיגון אישי לבתי החולים, חיסונים, אפליקציות בידוד, טיפולים שאינם חיסונים, עוד בדיקות ועוד בדיקות ותקווה.
 
 Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
 
