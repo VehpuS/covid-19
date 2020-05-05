@@ -708,21 +708,33 @@ That's how we beat COVID-19.
 
 But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
 
-אבל מה אם זה לא יעבוד כמו שאנחנו מקווים? דברים כבר
+ אבל מה אם זה לא יעבוד כמו שאנחנו מקווים?
 
 The pessimist invents the parachute.
 
 ###Scenario 4+: Masks For All, Summer, Circuit Breakers
 
+###תרחיש 4+: נשף מסכות, קיץ, איפוסים
+
 What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
+
+מה אם _R0 הרבה יותר גדול ממה שהערכנו, וכל הצעדים שתוארו עד עכשיו, כולל הרחקה חברתית, *עדיין* לא מספיקים כדי להגיע ל R < 1?
 
 Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
 
+שימו לב, בכל מקרה הקטנה של R מקטינה את כמות המקרים הכללית ולכן חוסכת חיי אדם. אבל R < 1 היא עדיין המטרה שלנו לכן הנה עוד כמה צעדים להקטנה R:
+
 **Masks For All:**
+
+**נשף מסכות:**
 
 *"Wait,"* you might ask, *"I thought face masks don't stop you from getting sick?"*
 
+*"רגע,"* אתם אומרים, *"חשבתי שמסכות לא מונעות ממך להדבק?"*
+
 You're right. Masks don't stop you from getting sick[^incoming]... they stop you from getting *others* sick.
+
+נכון. מסכות לא מונעות ממך להדבק[^incoming]... הן מונעות ממך להדביק אחרים.
 
 [^incoming]: “None of these surgical masks exhibited adequate filter performance and facial fit characteristics to be considered respiratory protection devices.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
@@ -734,23 +746,35 @@ You're right. Masks don't stop you from getting sick[^incoming]... they stop you
 
 To put a number on it: surgical masks *on the sick person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
 
+או במספרים: מסיכה על *אדם חולה* מקטינה את נגיפי השפעת ברסס ב 70%.[^outgoing] הקטנה של 70% בהדבקה שקולה להשפעה של סגר!
+
 However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
+
+על כל פנים, אנחנו עדיין לא יודעים מה ההשפעה *הספציפית* של מסכות על COVID-19. במחקרים מדעיים מקובל לפרסם תוצאות רק בביטחון של 95% (מקובל...) נכון ל1 במאי 2020 מסכות עדיין לא וודאיות ב 95%.
 
 [^replication]: Any actual scientist who read that last sentence is probably laugh-crying right now. See: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
 
 However, pandemics are like poker. **Make bets only when you're 95% sure, and you'll lose everything at stake.** As a recent article on masks in the British Medical Journal notes,[^precautionary] we *have* to make cost/benefit analyses under uncertainty. Like so:
 
+בכל מקרה, פנדמיות הן כמו משחק פוקר. ** אם תהמר רק כשאתה בטוח ב 95% תפסיד בכל סיבוב.** כמו שמציין מאמר על מסכות ב British Medical Journal,[^precautionary] אנחנו *חייבים* לעשות ניתוחים של עלות/תועלת בתנאים של אי-וודאות. ולכן:
+
 [^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
 Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
 
+עלות: אם מסכות בד ביתיות )ביעילות של ~2\3 ממסכות מנתחים [^homemade]), זולות מאד. אם מסכות מנתחים יותר יקרות אבל עדיין זולות למדי.
+
 Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
+
+תועלת: אפילו אם יש סיכוי של 50-50 שמסכות מקטינות את שיעור ההדבקה ב 0% או ב 70%, ממוצע התוחלת הוא עדיין 35%, כמו חצי סגר! אז בואו נניח שההשפעה היא 35% כפיצוי על אי הוודאות שלנו. (שוב, אשר לשחק עם המספרים)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
 
 (other arguments for/against masks:[^mask_args])
+
+(:[^mask_args]עוד טיעונים בעד ונגד מסכות)
 
 [^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
 
@@ -762,11 +786,19 @@ Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission b
 
 Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
 
+מסכות *לבדן* לא יביאו אותנו ל R < 1.  אבל אם שטיפת ידים ובידוד מגעים יבאו אותנו ל R = 1.10, אפילו אם רק שליש מהאנשים יחבשו מסכות הם יעבירו אותנו מעבר ל R < 1, המגיפה נעצרה!
+
 **Summer:**
+
+**קיץ:**
 
 Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
 
+OK, קיץ זה לא משהו שאנחנו יכולים לעשות, אבל הקיץ יעזור! חלק מאתרי החדשות מדווחים שהקיץ לא יעשה כלום ל COVID-19. הם חצי צודקים: הקיץ לא יגרום ל R < 1 אבל הוא יוריד את R.
+
 For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 15°C (60°F), so summer will make R drop by 18%.
+
+עבור COVID-19, כל עליה של 1° מביאה לירידה של 1.2% ב R[^heat]. הפרש הטמפרטורות בין הקיץ לחורף בישראל הוא בערך 10° ולכן אנחנו יכולים לצפות לירידה של 12% ב R. 
 
 [^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
@@ -776,17 +808,30 @@ For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.[^
 
 Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
 
+הקיץ לבדו לא יביא ל R < 1 אבל אם יש לנו אמצעים מוגבלים, אנחנו יכולים לשחרר חלק מההגבלות בקיץ ולהחזיר אותן בחורף.
+
 **A "Circuit Breaker" Lockdown:**
+**איפוסים:*
 
 And if all that *still* isn't enough to get R < 1... we can do another lockdown.
 
+ואם כל זה *עדיין* לא מספיק, אנחנו יכולים לעשות עוד סגר.
+
 But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
 
+אבל בגלל ש R כבר מוקטן בכל מני צורות אחרות לא נצטרך לעשות חודש חופשי וחודשיים סגר במעגל אין סופי. נצטרך אולי עוד סגר או שניים עד שיהיה חיסון זמין. (סינגפור נאלצה לעשות סגר שני לאחרונה אחרי 4 חודשים של שליטה במגיפה. זה לא כישלון: ככה נראית מלחמה *מוצלחת* בנגיף)
+
 Here's a simulation a "lazy case" scenario:
+
+הנה סימולציה של תרחיש מעורב כזה:
 
 1. Lockdown, then
 2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
 3. One more "circuit breaker" lockdown before a vaccine's found.
+
+1. סגר, ואז
+2. קצת הגיינה משופרת, עם קצת איתור מגעים, עם קצת מסכות ואז...
+3. עוד סגר לאיפוס לפני שנמצא החיסון
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
@@ -794,23 +839,41 @@ Here's a simulation a "lazy case" scenario:
 
 Not to mention all the *other* interventions we could do, to further push R down:
 
+וזה בלי לדבר על שאר הדברים שאנחנו יכולים לעשות כדי להנמיך את R:
+
 * Travel restrictions/quarantines
 * Temperature checks at malls & schools
 * Deep-cleaning public spaces
 * [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
 * And all else human ingenuity shall bring
 
+* הגבלות נסיעה ובידוד למגיעים לארץ
+* בדיקות טמפרטורה בקניונים ובתי ספר
+* ניקיון יסודי של איזורים ציבוריים
+* [לחיצת רגלים במקום לחיצת ידיים](https://twitter.com/V_actually/status/1233785527788285953)
+* וכל שאר הפטנטים שעוד נמציא
+
 . . .
 
 We hope these plans give you hope. 
 
+אנחנו מקווים שהתכנית הזו נותנת לכם תקווה.
+
 **Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
+
+**גם תחת ההנחות הפסימיות יותר, *אפשר* לנצח את המגפה הזו ולשמור על הבריאות הנפשית והכלכלית שלנו.** נשתנש בסגר כדי לאפס את המצב כשנצטרך, נשמור על R < 1 עם בידוד מקרים + מעקב מגעים ששומר על הפרטיות שלנו + מסכות לכולנו... והחיים יכולים לחזור ל(סוג של) מסלולם.
 
 Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
 
+אז נסבול מידיים יבשות. אבל נוכל לצאת לבלות בין הירקות ברמי לוי, נוכל ללכת לקולנוע לראות את הלהיט התורן, נוכל להמשיך לחיות את החיים שלנו.
+
 Even under the worst-case scenario... life perseveres.
 
+גם בתרחישים הקשים יותר... החיים ממשיכים.
+
 So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
+
+אז עכשיו, בואו נתכנן כמה תרחישים *עוד יותר גרועים*:
 
 <div class="section chapter">
     <div>
@@ -821,14 +884,23 @@ So now, let's plan for some *worse* worst-case scenarios. Water landing, get you
 
 You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
 
-...*for how long?*
+חטפתם COVID-19 והבראתם או שקיבלתם חיסון. ברכות! עכשיו אתם מחוסנים. 
+
+...*לכמה זמן?*
 
 * COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
 * The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
 * There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
 * One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
 
+* ממה שאנחנו מכירים, COVID-19 הכי דומה ל SARA שמעניק שנתיים של חסינות למבריאים .[^SARS immunity]
+* חיידקי קורונה שגורמים לצינון מעניקים 8 חודשי חסינות.[^cold immunity]
+* ישנם דיווחים על מחלימים מ COVID-19 שנבדקו ונמצאו חיוביים שוב. לא ברור אם המקרים הללו הם טעות בבדיקה (false positive)..[^unclear]
+* מחקר אחד, לא עבר עדיין ביקורת עמיתים, הראה שקופים חסינים לפחות 28 ימים אחרי החלמה.[^monkeys]
+
 But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+
+לגבי בני אדם, נכון ל 1 במאי 2020, "לכמה זמן" היא שאלה פתוחה.
 
 [^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
 
@@ -839,7 +911,12 @@ But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
 [^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
 
 For these simulations, let's say it's 1 year.
+
+.לסימולציה הבאה נניח שאנחנו חסינים לשנה
+
 **Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
+
+**הנה סימולציה שמתחילה ב 100% _R**, דועכת אקספוננציאלית לאנשים חשופים ללא חסינות _S :אחרי שנה
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
@@ -847,11 +924,17 @@ For these simulations, let's say it's 1 year.
 
 Return of the exponential decay!
 
+שובה של הדעיכה האקספוננציאלית.
+
 This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+
+זה ה**SERIRS Model**. ה S שנוספה בסוף היא אנשים שחוזרים להיות פגיעים <icon s></icon> Susceptible. 
 
 ![](pics/seirs.png)
 
 Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+
+בואו נעשה סימולציה של התפרצות COVID-19 בלי שום התערבות... *בהנחה שהחסינות מחזיקה מעמד שנה אחת:*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
@@ -859,9 +942,15 @@ Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions...
 
 In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
 
+בסימולציות הקודמות היה לנו רק שיא אחד שעבר את הקיבולת של מערכת בטיפול הנמרץ. עכשיו יש לנו כמה כאלו *ו* _I מתייתבים *באופן קבוע* על שיא הקיבולת של הטיפול הנמרץ. (שאותו הכפלנו פי שלוש כזכור)
+
 R = 1, it's **endemic.**
 
+R = 1, היא כאן להישאר
+
 Thankfully, because summer reduces R, it'll make the situation better:
+
+למרבה המזל, בגלל שהקיץ מפחית את R, המצב ישתפר:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
@@ -869,11 +958,19 @@ Thankfully, because summer reduces R, it'll make the situation better:
 
 Oh.
 
+אוי.
+
 Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
+
+הקיץ מחריף את הקפיצות *וגם* גורם להן לחזור בקביעות! זה קורה בגלל שהקיץ מפחית את _I החדשים, אבל אז גורם גם לירידה בכמות המחוסנים החדשים _R ולכן החסינות יורדת בקיץ וגורמת לקפיצה קבועה בחורף.
 
 Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
 
+למרבה המזל, הפיתרון לזה פשוט - לחסן בכל סתיו/חורף, כמו שאנחנו עושים עכשיו עם השפעת:
+
 **(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
+
+**)אחרי שתפעילו את ההקלטה נסו לעשות סימולציה של קמפיין החיסונים שלכם! אפשר לעצור ולהמשיך את הסימולציה מתי שרוצים(**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
@@ -881,17 +978,27 @@ Thankfully, the solution to this is pretty straightforward – just vaccinate pe
 
 But here's the scarier question:
 
+אבל הנה השאלה המפחידה יותר:
+
 What if there's no vaccine for *years*? Or *ever?*
+
+מה אם לא יהיה חיסון במשך *שנים*? או *לעולם*?
 
 **To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment. 
 
+** רק להבהיר: זה לא תרחיש סביר.** מרבית האפידימיולוגים מצפים לחיסון בתוך שנה או שנתיים. נכון שלא נמצא עד היום חיסון לאף נגיף ממשפחת הקורונה אבל זה בגלל שמגפת ה SARS נעצרה מהר ונגיף ההצטננות לא היה שווה את ההשקעה.
+
 Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
+
+ועדיין, מומחים הביעו דאגות: מה אם לא נצליח לייצר מספיק?[^vax_enough] מה אם נעשה את זה בחיפזון, והחיסון לא יהיה בטוח?[^vax_safe]
 
 [^vax_enough]: “If a coronavirus vaccine arrives, can the world make enough?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
 
 [^vax_safe]: “Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
 
 Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most to least terrible:
+
+אפילו אם נמצא את עצמנו בסיוט של "אין-חיסון", עדיין יהיו לנו שלושה קרשי הצלה:
 
 1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
 
