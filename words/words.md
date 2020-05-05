@@ -406,15 +406,23 @@ The "Flatten The Curve" plan was touted by every public health organization, whi
 
 Both plans, though, had a literally fatal flaw.
 
+שתי התכניות הללו סובלות מפגם קטלני
+
 First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
 
+קודם כל, בואו נסתכל על שתי הדרכים המרכזיות "לשטח את העקומה": שטיפת ידיים וריחוק חברתי.
+
 Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
+
+שטיפת ידיים מוגברת מורידה את התפשטות נגיפי השפעת בערך ב 25% במדינות מפותחות[^handwashing], וסגר בלונדון הוריד את כמות המגעים הקרובים בערך ב 70%. בוא נניח ששטיפת ידיים יכולה לצמצם את R ב*עד* 25%, וריחוק חברתי יכול לצמצם את R ב *עד* [^london]70%:
 
 [^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
 
 [^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
 **Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+
+**שחקו עם המחשבון הזה כדי לראות איך אחוז שטיפת היידים אצל אנשים שאינם _S, וריחוק חברתי מצמצמים את R:** )החישוב הזה מציג את ההשפעה *היחסית* ולכן הגדלה של אחד הגורמים *נראית* כאילו היא מקטינה את האחרים.[^log_caveat])
 
 [^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
 
@@ -424,19 +432,32 @@ Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwa
 
 Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
 
+בוא נבדוק מה היה קורה אם בתחילת מרץ 2020 היינו מגבירים את שטיפת הידיים אבל מפעילים רק ריחוק חברתי *קל* - כך ש R היה נמוך יותר רבל עדיין מעל 1:
+
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
 Three notes:
 
+שלוש הערות:
+
 1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+
+1. הגישה הזו מפחיתה את *סך הכל המקרים*! **אפילו אם לא הצלחנו להגיע ל ר >1, הקטנת R עדיין מצילה חיים על ידי הפחתת כמות האנשים שיחלו מעבר לנקודה של חסינות עדר.** הרבה אנשים חושבים שאם "נשטח את העקומה" נפזר את המקרים על יותר זמן אבל לא נקטין את סך הכל המקרים. זה לא יכול להיות *בשום* מודל אפידימיולוגי.
 
 2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
 
+2. בזכות הריחוק המצומצם ושטיפת הידיים, מספר המקרים מגיע לשיא *לפני* הגעה לחסינות עדר. למעשה, מספר המקרים הכולל עובר את המספר שדרוש לחסינות עדר רק במעט! זו התכנית הבריטית! בנקודה הזו R > 1, אפשר להסיר את כל ההגבלות וההתפרצות לא תחזור!, תכנית מצויינת! למעט בעיה קטנה אחת...
+
 3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
 
+3. אנחנו עדיין עוברים את כמות במיטות בטיפול נמרץ. למשך כמה חודשים (זכרו שהכפלנו את כמות המיטות פי שלוש לייתר ביטחון).
+
 That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
+
+זה היה עוד ממצא של המחקר של אימפיריאל קולג' מה 16 למרץ ששכנע את הבריטים לוותר על התכנית הזו. כל ניסיון "לשטח את העקומה" (להקטין את R אבל עדיין R < 1) ייכשל. הדרך היחידה היא "לשבור את העקומה" (להקטין את R כך ש R > 1(
+
 
 ![](pics/mitigation_vs_suppression.png)
 
