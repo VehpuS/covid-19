@@ -38,9 +38,9 @@ Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you 
 
 גם אנחנו (Marcel, epidemiologist + Nicky, art/code) מודאגים. לכן הכנו את הסימולטור הזה ואתם מוזמנים להשתמש בו כדי להפוך את הפחד שלכם להבנה:
 
-* **החודשים האחרונים** )מבוא לאפידימיולוגיה, מודל SEIR, R ו R<sub>0</sub>(
-* **החודשים הקרובים** )סגרים, מעקב מגעים, מסיכות(
-* **השנים הקרובות** )איבוד חסינות? יהיה חיסון?(
+* **החודשים האחרונים** (מבוא לאפידימיולוגיה, מודל SEIR, R ו R<sub>0</sub>)
+* **החודשים הקרובים** (סגרים, מעקב מגעים, מסיכות)
+* **השנים הקרובות** (איבוד חסינות? יהיה חיסון?)
 
 * **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
 * **The Next Few Months** (lockdowns, contact tracing, masks)
@@ -48,7 +48,7 @@ Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you 
 
 This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
 
-המדריך הזה (פורסם בתחילת מאי →[^timestamp]) והוא מיועד לתת לכם תקווה *וגם* פחד. כדי לנצח את COVID-19 **בדך שגם תשמו על הבריאות הנפשית והכלכלית שלנו** אנחנו צריכים אופטימיות כדי לתכנן תכניות ופסימיות כדי לתכנן תכניות גיבוי. כמו שאמר Gladys Bronwyn *"האופטימי ממציא את המטוס והפסימי ממציא את המצנח."*2020
+המדריך הזה (פורסם בתחילת מאי 2020 →[^timestamp]) והוא מיועד לתת לכם תקווה *וגם* פחד. כדי לנצח את COVID-19 **בדרך שגם תשמור על הבריאות הנפשית והכלכלית שלנו** אנחנו צריכים אופטימיות כדי לתכנן תכניות, ופסימיות כדי לתכנן תכניות גיבוי. כמו שאמר Gladys Bronwyn *"האופטימי ממציא את המטוס והפסימי ממציא את המצנח."*
 
 [^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
     
@@ -75,7 +75,7 @@ Pilots use flight simulators to learn how not to crash planes.
 
 So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
 
- אז למה לא נבנה לנו סימולטור מגפות מאד *מאד* פשטני! בסימולטור הזה, <icon i></icon> אנשים מדבקים יכולים להפוך <icon s></icon>  אנשים אחרים למדבקים.  
+ אז למה לא נבנה לנו סימולטור מגפות מאד *מאד* פשטני! בסימולטור הזה, <icon i></icon> אנשים מדבקים יכולים להפוך <icon s></icon> אנשים פגיעים למדבקים (פגיעים הם אנשים שאין להם חסינות והם גם לא חולים או מדבקים בעצמם כרגע).  
 
 ![](pics/spread.png)
 
@@ -83,7 +83,7 @@ So, let's make a very, *very* simple "epidemic flight simulator"! In this simula
 It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation)
 
 
-מעריכים ש*בתחילת* ההתפרצות של COVID-19, הוירוס דילג מ <icon i></icon> ל <icon s></icon>  כל 4 ימים *בממוצע* (כדאי לזכור שיש כאן שונות מאד גדולה)
+מעריכים ש*בתחילת* ההתפרצות של COVID-19, הוירוס דילג מ <icon i></icon> ל <icon s></icon>  כל 4 ימים *בממוצע*. (כדאי לזכור שיש כאן שונות מאד גדולה)
 
 [^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
 
@@ -92,6 +92,8 @@ If we simulate "double every 4 days" *and nothing else*, on a population startin
 אם אנחנו מכניסים לסימולטור שלנו "הכפלה כל 4 ימים" *ושום דבר אחר* על אוכלוסיה שמתחילה עם 0.001% <icon i></icon>, מה יקרה?
 
 **Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
+
+**לחצו "הפעל" כדי להתחיל את הסימולציה! תוכלו להפעילו אותה שוב אחרי שתסתיים וגם לשחק עם ההגדרות! (הסתייגויות טכניות: [^caveats])
 
 ****
 
@@ -107,7 +109,7 @@ If we simulate "double every 4 days" *and nothing else*, on a population startin
 
 This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
 
-זה **הגידול האקספוננציאלי**. מתחיל ק'טן, ואז מתפוצץ. "זאת רק שפעת" ואז "שפעת לא יוצרת קברים המוניים בערים עשירות".
+זה **הגידול האקספוננציאלי**. מתחיל קטן, ואז מתפוצץ. "זאת רק שפעת" ואז "משפעת לא נהיים קברים המוניים בערים גדולות של מדינות מפותחות".
 
 ![](pics/exponential.png)
 
@@ -119,7 +121,7 @@ But, this simulation is wrong. Exponential growth, thankfully, can't go on forev
 
 The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i></icon>s, **but the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s.**
 
-ככל שיש יותר <icon i></icon> מי שהוא S נהיה <icon i></icon> מהר יותר, **אבל, ככל שיש פחות <icon s></icon>, מי שהוא <icon s></icon> נהיה <icon i></icon> *לאט יותר*.**
+ככל שיש יותר <icon i></icon> מי שהוא <icon s></icon> נהיה <icon i></icon> מהר יותר, **אבל, ככל שיש פחות <icon s></icon>, מי שהוא <icon s></icon> נהיה <icon i></icon> *לאט יותר*.**
 
 
 How's this change the growth of an epidemic? Let's find out:
@@ -136,15 +138,15 @@ This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then s
 
 But, this simulation is *still* wrong. We're missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) "recovering" with lung damage, or 3) dying.
 
-אבל הסימולציה הזו עדיין לא נכונה. אנחנו מפספסים את העובדה ש I אנשים מדבקים בסופו של דבר מפסיקים להדביק. או שהם מחלימים, או שהם "מחלימים" עם נזק לריאות, או שהם מתים.
+אבל הסימולציה הזו עדיין לא נכונה. אנחנו מפספסים את העובדה ש  <icon i></icon> אנשים מדבקים בסופו של דבר מפסיקים להדביק. או שהם מחלימים, או שהם "מחלימים" עם נזק לריאות, או שהם מתים.
 
 For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
 
-לשם הפשטות, נניח שכל I המדביקים נהיים R מחלימים. (רק נזכור שבמציאות חלק מהם מתים) R לא יכולים להדביק שוב, ונניח *לעת עתה* שהם נשארים חסינים לשארית חייהם.
+לשם הפשטות, נניח שכל  <icon i></icon> המדביקים נהיים <icon r></icon> מחלימים. (רק נזכור שבמציאות חלק מהם מתים) <icon r></icon> לא יכולים להדביק שוב, ונניח *לעת עתה* שהם נשארים חסינים לשארית חייהם.
 
 With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <icon i></icon>:**
 
-ההערכה היא שעם COVID-19 אתה I מדבק למשך 10 ימים *בממוצע*. זה אומר שחלק יחלימו לפני שיעברו 10 ימים, וחלק אחרי.
+ההערכה היא שעם COVID-19 אתה <icon i></icon>מדבק למשך 10 ימים *בממוצע*. זה אומר שחלק יחלימו לפני שיעברו 10 ימים, וחלק אחרי.
 
 [^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
 
@@ -176,7 +178,7 @@ Let's find out.
 
 And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
 
-וזה המקור של העקומה שאנחנו רואים בכל מקום! זו לא עקומת פעמון, זו לא עקומה שאנחנו מכירים ממקום אחר אבל זו העקומה שהשתלטה על החיים של כולנו ואותה אנחנו מנסים לשטח!
+וזה המקור של העקומה שאנחנו רואים בכל מקום! זו לא עקומת פעמון, זו לא עקומה שאנחנו מכירים ממקום אחר, אבל זו העקומה שהשתלטה על החיים של כולנו ואותה אנחנו מנסים לשטח!
 
 This is the the **SIR Model**,[^sir]    
 (<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
@@ -199,19 +201,19 @@ the *second*-most important idea in Epidemiology 101:
 
 Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
 
-למעשה, הואו נוסיף עוד קצת ניואנס: לפני שS נהיה I, הוא נהיה Eנשא. זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
+למעשה, בואו נוסיף עוד קצת ניואנס: לפני ש<icon s></icon> נהיה <icon i></icon>, הוא נהיה <icon e></icon>נשא. זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
 
 ![](pics/seir.png)
 
 (This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
 
-)הגרסה הזו של המודל מכונה **SEIR Model*** והאות "E" פירושה E "Exposed". (שימו לב שהמילה Exposed משמשת בשפה היום יומית לתאר מישהו שנחשף לנגיף אבל אולי לא נדבק. כאו הכוונה היא למישהו שנדבק בוודאות אבל עדיין לא מדבק)
+)הגרסה הזו של המודל מכונה **SEIR Model*** והאות "E" פירושה "Exposed" <icon e></icon>. (שימו לב שהמילה Exposed משמשת בשפה היום יומית לתאר מישהו שנחשף לנגיף אבל אולי לא נדבק. כאו הכוונה היא למישהו שנדבק בוודאות אבל עדיין לא מדבק)
 
 [^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
 For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
 
-ל COVID-19, ההערכה היא שאתה E - .למשך 3 ימים, *בממוצע* נשא-אבל-אלא-מדבק
+ל COVID-19, ההערכה היא שאתה E - .למשך 3 ימים, *בממוצע* נשא-אבל-לא-מדבק.
 מה יקרה אם נוסיף את זה לסימולציה?
 
 
@@ -236,13 +238,13 @@ Why's that? Because of the *first*-most important idea in Epidemiology 101:
 
 Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
 
-שמסמל את ה "Reproduction number". המספר הממוצע של אנשים שI מדביק *לפני* הוא מחלים )או נפטר)
+שמסמל את ה "Reproduction number". המספר הממוצע של אנשים ש<icon i></icon> מדביק *לפני* שהוא מחלים (או נפטר).
 
 ![](pics/r2.png)
 
 **R** changes over the course of an outbreak, as we get more immunity & interventions.
 
-**R** הוא זה שמשנה את הכיוון של ההתפרצות ככל שאנחנו מפתחים יותר חסינות או מתערבים במצב בכל מני דרכים.
+**R** הוא זה שמשנה את הכיוון של ההתפרצות כשאנחנו מפתחים יותר חסינות או מתערבים במצב בכל מני דרכים.
 
 **R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
 
@@ -251,18 +253,18 @@ Short for "Reproduction number". It's the *average* number of people an <icon i>
 
 (Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
 
-)רוב הכתבות החדשות - ואפילו חלק מהמאמרים האקדמיים! - מבלבלים בין R ל R<sub>0</sub>(
+(רוב הכתבות החדשות - ואפילו חלק מהמאמרים האקדמיים! - מבלבלים בין R ל R<sub>0</sub>)
 
 The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
 
-הערך של R<sub>0</sub> לשפעת העונתית הוא בערך 1.28[^r0_flu]. זה אומר, ש*בתחילת* התפרצות של שפעת, כל <icon i></icon> מדביק  1.28 אחרים *בממוצע*. (אם נשמע לכם מוזר שהמספר הזה הוא לא מספר שלם, לאמא הממוצעת יש 2.4 ילדים. זה לא אומר שיש כל מני חצאי ילדים שמסתובבים בחוץ.)
+הערך של R<sub>0</sub> לשפעת העונתית הוא בערך 1.28[^r0_flu]. זה אומר, ש*בתחילת* התפרצות של שפעת, כל <icon i></icon> מדביק  1.28 אחרים *בממוצע*. (אם נשמע לכם מוזר שהמספר הזה הוא לא מספר שלם, לאמא הממוצעת יש 2.4 ילדים. זה לא אומר שיש כל מני חצאי ילדים שמסתובבים בחוץ)
 
 
 [^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
 The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one *not-yet-finalized* study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]
 
-מעריכים ש R<sub>0</sub> ל COVID-19 הוא בערך 2.2,[^r0_covid] למרות שמחקר אחד *לא סופי* מעריך אותו ב !5.7(!) in Wuhan.[^r0_wuhan]
+מעריכים ש R<sub>0</sub> ל COVID-19 הוא בערך 2.2,[^r0_covid] למרות שמחקר אחד *לא סופי* מעריך אותו ב !5.7(!) בווהאן.[^r0_wuhan]
 
 
 [^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
@@ -271,14 +273,14 @@ The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though 
 
 In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
 
-בסימולציה שלנו - *בתחילת ההתפרצות, בממוצע* - I מדביק מישהו כל 4 ימים, למשך 10 ימים. "4 ימים" נכנס לתוך "10 ימים" פעמיים וחצי. זה אומר ש - *בתחילת ההתפרצות, בממוצע* - כל I ידביק 2.5 אחרים. לכן R0=2.5. )הסתייגויות:[^r0_caveats_sim]( 
+בסימולציה שלנו - *בתחילת ההתפרצות, בממוצע* - <icon i></icon> מדביק מישהו כל 4 ימים, למשך 10 ימים. "4 ימים" נכנס לתוך "10 ימים" פעמיים וחצי. זה אומר ש - *בתחילת ההתפרצות, בממוצע* - כל <icon i></icon> ידביק 2.5 אחרים. לכן R0=2.5. (הסתייגויות:[^r0_caveats_sim])
 
 
 [^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
 
 **Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time & new-infection time:**
 
-** שחקו עם מחשבון R0 הזה כדי לראות איך R0 מושפע מזמן ההחלמה והזמן להדבקות חדשות:**
+** שחקו עם מחשבון R<sub>0</sub> הזה כדי לראות איך R<sub>0</sub> מושפע מזמן ההחלמה והזמן להדבקות חדשות:**
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
@@ -286,7 +288,7 @@ In our simulations – *at the start & on average* – an <icon i></icon> infect
 
 But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
 
-אבל צריך לזכור, ככל שיש פחות S, לוקח יותק זמן ל S להפוך להיות I. הערך של R *עכשיו* תלוי לא רק בערך *הבסיסי* שלו (R0) אלא *גם* בכמה אנשים כבר לא S חשופים )לדוגמא, אנשים שהחלימו ופיתחו חסינות טבעית(
+אבל צריך לזכור, ככל שיש פחות <icon s></icon>, לוקח יותר זמן ל <icon s></icon> להפוך להיות <icon i></icon>. הערך של R תלוי *עכשיו* לא רק בערך *הבסיסי* שלו (R<sub>0</sub>) אלא *גם* בכמה אנשים כבר לא <icon s></icon> חשופים (למשל, אנשים שהחלימו ופיתחו חסינות טבעית)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
@@ -295,11 +297,11 @@ But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>
 When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
 
 
-כשלמספיק אנשים יש חסינות, R>1, והמגיפה נעצרת! המצב הזה נקרא **חסינות עדר**. במקרה של שפעת, חסינות עדר מושגת *באמצעות חיסון*. לנסות לתת לאנשים להידבק כדי להשיג "חסינות עדר טבעית" זה רעיון *איום ונורא*. (אבל אולי לא מהסיבות שאתם חושבים! תיכף נסביר.) 
+כשלמספיק אנשים יש חסינות, R < 1, והמגיפה נעצרת! המצב הזה נקרא **חסינות עדר**. במקרה של שפעת, חסינות עדר מושגת *באמצעות חיסון*. לנסות לתת לאנשים להידבק כדי להשיג "חסינות עדר טבעית" זה רעיון *איום ונורא*. (אבל אולי לא מהסיבות שאתם חושבים! תיכף נסביר.) 
 
 Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:
 
-בואו נשחק שוב עם מודל SEIR, אבל הפעם נראה את R0, ערך R, והסף שממנו אנחנו משיגים חסינות עדר:
+בואו נשחק שוב עם מודל SEIR, אבל הפעם נראה את R<sub>0</sub>, ערך R, והסף שממנו אנחנו משיגים חסינות עדר:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
