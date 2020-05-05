@@ -62,7 +62,7 @@
 <!-- - - - - - - - - - - - - - - - - - - - - - - -->
 
 <article dir="rtl">
-	v13
+	v14
 <div class="section">
     <div>
         <iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
@@ -130,87 +130,126 @@ Those *aren<span class="hljs-symbol">'t</span>* exactly the same, but it<span cl
 </div>
 
 <p>This is the <strong>exponential growth curve.</strong> Starts small, then explodes. &quot;Oh it&#39;s just a flu&quot; to &quot;Oh right, flus don&#39;t create <em>mass graves in rich cities</em>&quot;. </p>
+<p>זה <strong>הגידול האקספוננציאלי</strong>. מתחיל ק&#39;טן, ואז מתפוצץ. &quot;זאת רק שפעת&quot; ואז &quot;שפעת לא יוצרת קברים המוניים בערים עשירות&quot;.</p>
 <p><img src="pics/exponential.png" alt=""></p>
 <p>But, this simulation is wrong. Exponential growth, thankfully, can&#39;t go on forever. One thing that stops a virus from spreading is if others <em>already</em> have the virus:</p>
+<p>אבל הסימולציה הזו לא נכונה. גידול אקספוננציאלי, למרבה המזל, לא יכול להמשך לנצח. אחד הדברים שעוצר את ההתפשטות של הוירוס הוא כשלאחרים <em>כבר יש אותו</em>:</p>
 <p><img src="pics/susceptibles.png" alt=""></p>
 <p>The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i></icon>s, <strong>but the fewer <icon s></icon>s there are, the <em>slower</em> <icon s></icon>s become <icon i></icon>s.</strong></p>
+<p>ככל שיש יותר <icon i></icon> מי שהוא S נהיה <icon i></icon> מהר יותר, <strong>אבל, ככל שיש פחות <icon s></icon>, מי שהוא <icon s></icon> נהיה <icon i></icon> <em>לאט יותר</em>.</strong></p>
 <p>How&#39;s this change the growth of an epidemic? Let&#39;s find out:</p>
+<p>איך זה משפיע על התפשטות המגיפה? בואו נראה:</p>
 <div class="sim">
         <iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
 <p>This is the &quot;S-shaped&quot; <strong>logistic growth curve.</strong> Starts small, explodes, then slows down again.</p>
+<p>זו <strong>העקומה הלוגיסטית</strong>. מתחילה בקטן, מתפוצצת, ואז שוב דועכת.</p>
 <p>But, this simulation is <em>still</em> wrong. We&#39;re missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) &quot;recovering&quot; with lung damage, or 3) dying.</p>
+<p>אבל הסימולציה הזו עדיין לא נכונה. אנחנו מפספסים את העובדה ש I אנשים מדבקים בסופו של דבר מפסיקים להדביק. או שהם מחלימים, או שהם &quot;מחלימים&quot; עם נזק לריאות, או שהם מתים.</p>
 <p>For simplicity&#39;s sake, let&#39;s pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can&#39;t be infected again, and let&#39;s pretend – <em>for now!</em> – that they stay immune for life.</p>
+<p>לשם הפשטות, נניח שכל I המדביקים נהיים R מחלימים. (רק נזכור שבמציאות חלק מהם מתים) R לא יכולים להדביק שוב, ונניח <em>לעת עתה</em> שהם נשארים חסינים לשארית חייהם.</p>
 <p>With COVID-19, it&#39;s estimated you&#39;re <icon i></icon> Infectious for 10 days, <em>on average</em>.[^infectiousness] That means some folks will recover before 10 days, some after. <strong>Here&#39;s what that looks like, with a simulation <em>starting</em> with 100% <icon i></icon>:</strong></p>
+<p>ההערכה היא שעם COVID-19 אתה I מדבק למשך 10 ימים <em>בממוצע</em>. זה אומר שחלק יחלימו לפני שיעברו 10 ימים, וחלק אחרי.</p>
 <p>[^infectiousness]: “The median communicable period [...] was 9.5 days.” <a href="https://link.springer.com/article/10.1007/s11427-020-1661-4">Hu, Z., Song, C., Xu, C. et al</a> Yes, we know &quot;median&quot; is not the same as &quot;average&quot;. For simplified educational purposes, close enough.</p>
 <div class="sim">
         <iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
 
 <p>This is the opposite of exponential growth, the <strong>exponential decay curve.</strong></p>
+<p>זה ההפך מגידול אקפוננציאלי - זו עקומה של <strong>דעיכה אקספוננציאלית</strong>.</p>
 <p>Now, what happens if you simulate S-shaped logistic growth <em>with</em> recovery?</p>
+<p>עכשיו, מה יקרה אם נעשה סימולציה של עקומה לוגיסטית <em>עם</em> התאוששות?</p>
 <p><img src="pics/graphs_q.png" alt=""></p>
 <p>Let&#39;s find out.</p>
-<p><b style='color:#ff4040'>Red curve</b> is <em>current</em> cases <icon i></icon>,<br><b style='color:#999999'>Gray curve</b> is <em>total</em> cases (current + recovered <icon r></icon>),
-starts at just 0.001% <icon i></icon>:</p>
+<p>בואו נראה.</p>
+<p><b style='color:#ff4040'>העקומה האדומה</b> היא מספר המקרים <em>הנוכחי</em> <icon i></icon>,<br><b style='color:#999999'>העקומה האפורה</b> היא <em>סך כל</em> המקרים (נוכחי + מחלימים <icon r></icon>),
+מתחילה בסך הכל ב 0.001% <icon i></icon>:</p>
 <div class="sim">
         <iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
 <p>And <em>that&#39;s</em> where that famous curve comes from! It&#39;s not a bell curve, it&#39;s not even a &quot;log-normal&quot; curve. It has no name. But you&#39;ve seen it a zillion times, and beseeched to flatten.</p>
+<p>וזה המקור של העקומה שאנחנו רואים בכל מקום! זו לא עקומת פעמון, זו לא עקומה שאנחנו מכירים ממקום אחר אבל זו העקומה שהשתלטה על החיים של כולנו ואותה אנחנו מנסים לשטח!</p>
 <p>This is the the <strong>SIR Model</strong>,[^sir]<br>(<icon s></icon><strong>S</strong>usceptible <icon i></icon><strong>I</strong>nfectious <icon r></icon><strong>R</strong>ecovered)<br>the <em>second</em>-most important idea in Epidemiology 101:</p>
+<p>זה המודל המכונה <strong>SIR Model</strong>
+(<icon s></icon><strong>S</strong>usceptible - פגיעים <icon i></icon><strong>I</strong>nfectious - מדבקים <icon r></icon><strong>R</strong>ecovered - מחלימים) </p>
+<p>the <em>second</em>-most important idea in Epidemiology 101:
+הרעיון <em>השני</em> הכי חשוב במבוא לאפידמיולוגיה:</p>
 <p>[^sir]: For more technical explanations of the SIR Model, see <a href="https://www.idmod.org/docs/hiv/model-sir.html#">the Institute for Disease Modeling</a> and <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model">Wikipedia</a></p>
 <p><img src="pics/sir.png" alt=""></p>
 <p><strong>NOTE: The simulations that inform policy are way, <em>way</em> more sophisticated than this!</strong> But the SIR Model can still explain the same general findings, even if missing the nuances.</p>
+<p><strong>שימו לב: הסימולציות שמשמשות לקבלת החלטות הרבה<em>הרבה</em> יותר מורכבות מזה!</strong> אבל מודל SIR יכול עדיין להסביר כמה ממצאים מרכזיים, אפילו אם הוא מתעלם מכמה ניואנסים.</p>
 <p>Actually, let&#39;s add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can&#39;t pass it on yet – infect<em>ed</em> but not yet infect<em>ious</em>.</p>
+<p>למעשה, הואו נוסיף עוד קצת ניואנס: לפני שS נהיה I, הוא נהיה Eנשא. זה השלב שבו הוא כבר <em>נדבק</em> בוירוס, אבל הוא עדיין לא <em>מדביק</em> אחרים.</p>
 <p><img src="pics/seir.png" alt=""></p>
 <p>(This variant is called the <strong>SEIR Model</strong>[^seir], where the &quot;E&quot; stands for <icon e></icon> &quot;Exposed&quot;. Note this <em>isn&#39;t</em> the everyday meaning of &quot;exposed&quot;, when you may or may not have the virus. In this technical definition, &quot;Exposed&quot; means you definitely have it. Science terminology is bad.)</p>
+<p>)הגרסה הזו של המודל מכונה <strong>SEIR Model*</strong> והאות &quot;E&quot; פירושה E &quot;Exposed&quot;. (שימו לב שהמילה Exposed משמשת בשפה היום יומית לתאר מישהו שנחשף לנגיף אבל אולי לא נדבק. כאו הכוונה היא למישהו שנדבק בוודאות אבל עדיין לא מדבק)</p>
 <p>[^seir]: For more technical explanations of the SEIR Model, see <a href="https://www.idmod.org/docs/hiv/model-seir.html">the Institute for Disease Modeling</a> and <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model">Wikipedia</a></p>
 <p>For COVID-19, it&#39;s estimated that you&#39;re <icon e></icon> infected-but-not-yet-infectious for 3 days, <em>on average</em>.[^latent] What happens if we add that to the simulation?</p>
+<p>ל COVID-19, ההערכה היא שאתה E - .למשך 3 ימים, <em>בממוצע</em> נשא-אבל-אלא-מדבק
+מה יקרה אם נוסיף את זה לסימולציה?</p>
 <p>[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al.</a></p>
-<p><b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is <em>current</em> cases (infectious <icon i></icon> + exposed <icon e></icon>),<br><b style='color:#888'>Gray curve</b> is <em>total</em> cases (current + recovered <icon r></icon>):</p>
+<p>העקומות <b style='color:#ff4040'> האדומה <b style='color:#FF9393'>+ הוורודה</b> ביחד</b> הן כמות המקרים <em>הנוכחית</em> (מדבקים <icon i></icon> + נשאים <icon e></icon>),<br><b style='color:#888'>העקומה האפורה</b> היא <em>סך כל</em> המקרים (כמות מקרים נוכחית + מחלימים <icon r></icon>):</p>
 <div class="sim">
         <iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
 <p>Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and <em>when</em> current cases peak... but the <em>height</em> of that peak, and total cases in the end, stays the same.</p>
+<p>לא הרבה השתנה, משך הזמן שבו אתה נשאר <icon e></icon> נשא משנה את היחס בין <icon e></icon>-ל-<icon i></icon>, ו<em>מתי</em> כמות המקרים תגיע לשיא, אבל אבל <em>הגובה</em> של השיא הזה, וכמות המקרים הכללית בסופו של דבר, לא משתנה.</p>
 <p>Why&#39;s that? Because of the <em>first</em>-most important idea in Epidemiology 101:</p>
+<p>למה? בגלל העיקרון <em>הראשון</em> של מבוא לאפידימיולוגיה:</p>
 <p><img src="pics/r.png" alt=""></p>
 <p>Short for &quot;Reproduction number&quot;. It&#39;s the <em>average</em> number of people an <icon i></icon> infects <em>before</em> they recover (or die).</p>
+<p>שמסמל את ה &quot;Reproduction number&quot;. המספר הממוצע של אנשים שI מדביק <em>לפני</em> הוא מחלים )או נפטר)</p>
 <p><img src="pics/r2.png" alt=""></p>
 <p><strong>R</strong> changes over the course of an outbreak, as we get more immunity &amp; interventions.</p>
+<p><strong>R</strong> הוא זה שמשנה את הכיוון של ההתפרצות ככל שאנחנו מפתחים יותר חסינות או מתערבים במצב בכל מני דרכים.</p>
 <p><strong>R<sub>0</sub></strong> (pronounced R-nought) is what R is <em>at the start of an outbreak, before immunity or interventions</em>. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.</p>
+<p><strong>R<sub>0</sub></strong> הןא הערך של R <em>בתחילת ההתפרצות, לפני שאנשים התחילו לפתח עמידות ולפני שהתחלנו לנקוט באמצעים לריסון ההתפרצות</em>. R<sub>0</sub> משקף טוב יותר את העוצמה של הנגיף עצמו, ועדיין הוא עשוי להשתנות ממקום למקום. למשל, R<sub>0</sub> גבוה יותר ערים צפופות מאשר ביישובים חקלאיים.</p>
 <p>(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)</p>
+<p>)רוב הכתבות החדשות - ואפילו חלק מהמאמרים האקדמיים! - מבלבלים בין R ל R<sub>0</sub>(</p>
 <p>The R<sub>0</sub> for &quot;the&quot; seasonal flu is around 1.28[^r0_flu]. This means, at the <em>start</em> of a flu outbreak, each <icon i></icon> infects 1.28 others <em>on average.</em> (If it sounds weird that this isn&#39;t a whole number, remember that the &quot;average&quot; mom has 2.4 children. This doesn&#39;t mean there&#39;s half-children running about.)</p>
+<p>הערך של R<sub>0</sub> לשפעת העונתית הוא בערך 1.28[^r0_flu]. זה אומר, ש<em>בתחילת</em> התפרצות של שפעת, כל <icon i></icon> מדביק  1.28 אחרים <em>בממוצע</em>. (אם נשמע לכם מוזר שהמספר הזה הוא לא מספר שלם, לאמא הממוצעת יש 2.4 ילדים. זה לא אומר שיש כל מני חצאי ילדים שמסתובבים בחוץ.)</p>
 <p>[^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” <a href="https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480">Biggerstaff, M., Cauchemez, S., Reed, C. et al.</a></p>
 <p>The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one <em>not-yet-finalized</em> study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]</p>
+<p>מעריכים ש R<sub>0</sub> ל COVID-19 הוא בערך 2.2,[^r0_covid] למרות שמחקר אחד <em>לא סופי</em> מעריך אותו ב !5.7(!) in Wuhan.[^r0_wuhan]</p>
 <p>[^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/">Riou J, Althaus CL.</a></p>
 <p>[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” <a href="https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article">Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.</a></p>
 <p>In our simulations – <em>at the start &amp; on average</em> – an <icon i></icon> infects someone every 4 days, over 10 days. &quot;4 days&quot; goes into &quot;10 days&quot; two-and-a-half times. This means – <em>at the start &amp; on average</em> – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])</p>
+<p>בסימולציה שלנו - <em>בתחילת ההתפרצות, בממוצע</em> - I מדביק מישהו כל 4 ימים, למשך 10 ימים. &quot;4 ימים&quot; נכנס לתוך &quot;10 ימים&quot; פעמיים וחצי. זה אומר ש - <em>בתחילת ההתפרצות, בממוצע</em> - כל I ידביק 2.5 אחרים. לכן R0=2.5. )הסתייגויות:[^r0_caveats_sim]( </p>
 <p>[^r0_caveats_sim]: This is pretending that you&#39;re equally infectious all throughout your &quot;infectious period&quot;. Again, simplifications for educational purposes.</p>
 <p><strong>Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time &amp; new-infection time:</strong></p>
+<p><strong> שחקו עם מחשבון R0 הזה כדי לראות איך R0 מושפע מזמן ההחלמה והזמן להדבקות חדשות:</strong></p>
 <div class="sim">
         <iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
 <p>But remember, the fewer <icon s></icon>s there are, the <em>slower</em> <icon s></icon>s become <icon i></icon>s. The <em>current</em> reproduction number (R) depends not just on the <em>basic</em> reproduction number (R<sub>0</sub>), but <em>also</em> on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering &amp; getting natural immunity.)</p>
+<p>אבל צריך לזכור, ככל שיש פחות S, לוקח יותק זמן ל S להפוך להיות I. הערך של R <em>עכשיו</em> תלוי לא רק בערך <em>הבסיסי</em> שלו (R0) אלא <em>גם</em> בכמה אנשים כבר לא S חשופים )לדוגמא, אנשים שהחלימו ופיתחו חסינות טבעית(</p>
 <div class="sim">
         <iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
 <p>When enough people have immunity, R &lt; 1, and the virus is contained! This is called <strong>herd immunity</strong>. For flus, herd immunity is achieved <em>with a vaccine</em>. Trying to achieve &quot;natural herd immunity&quot; by letting folks get infected is a <em>terrible</em> idea. (But not for the reason you may think! We&#39;ll explain later.)</p>
+<p>כשלמספיק אנשים יש חסינות, R&gt;1, והמגיפה נעצרת! המצב הזה נקרא <strong>חסינות עדר</strong>. במקרה של שפעת, חסינות עדר מושגת <em>באמצעות חיסון</em>. לנסות לתת לאנשים להידבק כדי להשיג &quot;חסינות עדר טבעית&quot; זה רעיון <em>איום ונורא</em>. (אבל אולי לא מהסיבות שאתם חושבים! תיכף נסביר.) </p>
 <p>Now, let&#39;s play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:</p>
+<p>בואו נשחק שוב עם מודל SEIR, אבל הפעם נראה את R0, ערך R, והסף שממנו אנחנו משיגים חסינות עדר:</p>
 <div class="sim">
         <iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
 <p><strong>NOTE: Total cases <em>does not stop</em> at herd immunity, but overshoots it!</strong> And it crosses the threshold <em>exactly</em> when current cases peak. (This happens no matter how you change the settings – try it for yourself!)</p>
+<p><strong> שימו לב: המספר הכללי של המקרים <em>לא מפסיק לעלות</em> כשמגיעים לחסינות עדר. הוא ממשיך לטפס </strong> והוא חוצה את הסף של חסינות העדר בדיוק כשכמות המקרים מגיעה לשיא שלה (ולא משנה איך תשנו את ההגדרות - נסו בעצמכם)</p>
 <p>This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R &lt; 1. And when R &lt; 1, new cases stop growing: a peak.</p>
+<p>זה קורה בגלל שכשיש יותר אנשים שאינם S מסף החסינות, אנחנו מקבלים R&gt;1. וכש R&gt;1 כמות המקרים החדשים מספיקה לגדול - וזה השיא.</p>
 <p><strong>If there&#39;s only one lesson you take away from this guide, here it is</strong> – it&#39;s an extremely complex diagram so please take time to fully absorb it:</p>
+<p><strong> אם תצאו מהמאמר הזה אם דבר אחד - הנה הדבר הזה </strong> - זו דיאגרמה מסובכת במיוחד אז קחו כמה דקות להפנים אותה:</p>
 <p><img src="pics/r3.png" alt=""></p>
 <p><strong>This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!</strong></p>
+<p><strong>זה אומר שאנחנו לא חייבים לעצור את כל ההדבקות, או אפילו קרוב לזה, כדי לעצור את המגיפה!</strong></p>
 <p>It&#39;s a paradox. COVID-19 is extremely contagious, yet to contain it, we &quot;only&quot; need to stop more than 60% of infections. 60%?! If that was a school grade, that&#39;s a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R &lt; 1, virus is contained! (exact formula:[^exact_formula])</p>
+<p>זה מרגיש פרדוקסלי. COVID-19 היא מחלה מדבקת ביותר, אבל כדי לעצור אותה, אנחנו צריכים לעצור יותר מ 60% מההדבקות. 60% זה אולי לא ציון מרשים במיוחד בבית הספר אבל אם R0=2.5, ונצליח להקטין אותו ב 61% נקבל R = 0.975, וזה פחות מ1, המגיפה נעצרה! )הנוסחא המדוייקת:[^exact_formula](</p>
 <p>[^exact_formula]: Remember R = R<sub>0</sub> <em> the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions </em>stopped*.</p>
 <pre><code>Therefore, <span class="hljs-keyword">to</span> <span class="hljs-keyword">get</span> R &lt; <span class="hljs-number">1</span>, you need <span class="hljs-keyword">to</span> <span class="hljs-keyword">get</span> R&lt;<span class="hljs-keyword">sub</span>&gt;<span class="hljs-number">0</span>&lt;/<span class="hljs-keyword">sub</span>&gt; * TransmissionsAllowed &lt; <span class="hljs-number">1.</span> 
 
@@ -223,62 +262,89 @@ Therefore, TransmissionsStopped &gt; <span class="hljs-number">1</span> - <span 
 Therefore, you need <span class="hljs-keyword">to</span> <span class="hljs-keyword">stop</span> more than **<span class="hljs-number">1</span> - <span class="hljs-number">1</span>/R&lt;<span class="hljs-keyword">sub</span>&gt;<span class="hljs-number">0</span>&lt;/<span class="hljs-keyword">sub</span>&gt;** <span class="hljs-keyword">of</span> transmissions <span class="hljs-keyword">to</span> <span class="hljs-keyword">get</span> R &lt; <span class="hljs-number">1</span> <span class="hljs-keyword">and</span> contain the virus!
 </code></pre><p><img src="pics/r4.png" alt=""></p>
 <p>(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that&#39;s good you&#39;re challenging our assumptions! There&#39;ll be a &quot;Sandbox Mode&quot; at the end of this guide, where you can plug in your <em>own</em> numbers, and simulate what happens.)</p>
+<p>)אם נראה לכם שהערך של R0 או מספר אחר בסימולציה הזו נמוך/גבוה מדי, זה מצויין! בסוף המאמר יש סימולטור בוא תוכלו להזין את המספרים <em>שלכם</em> ולראות מה יוצא(</p>
 <p><em>Every</em> COVID-19 intervention you&#39;ve heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing &amp; quarantining, face masks, even &quot;herd immunity&quot; – they&#39;re <em>all</em> doing the same thing:</p>
+<p><em>כל</em> מה שאנחנו עושים כדי להתמודד עם המגיפה הזו - שטיפת ידיים, ריחוק חברתית, סגרים, בידוד, מעקב מגעים, מסיכות ואפילו&quot; חסינות עדר&quot; <em>כולם</em> מנסים להשיג אותה מטרה:</p>
 <p>Getting R &lt; 1.</p>
+<p>להגיע ל R&gt;1.</p>
 <p>So now, let&#39;s use our &quot;epidemic flight simulator&quot; to figure this out: How can we get R &lt; 1 in a way <strong>that also protects our mental health <em>and</em> financial health?</strong></p>
+<p>עכשיו, בואו נשתמש בסימולטור שלנו כדי לבוק איך אנחנו יכולים להגיע ל R &gt; 1 ש<strong>שומרת על הבריאות הנפשית והפיננסית שלנו</strong>.</p>
 <p>Brace yourselves for an emergency landing...</p>
 <div class="section chapter">
     <div>
         <img src="banners/curve.png" height=480 style="position: absolute;"/>
         <div>The Next Few Months</div>
+        <div>החודשים הקרובים</div>
     </div>
 </div>
 
 <p>...could have been worse. Here&#39;s a parallel universe we avoided:</p>
+<p>...יכלו להיות יותר גרועים. הנה כמה יקומים מקבילים שלא הגענו אליהם</p>
 <p>###Scenario 0: Do Absolutely Nothing</p>
+<p>###תרחיש 0: לא לעשות שום דבק</p>
 <p>Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there&#39;s 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being <em>simultaneously</em> infected – or, 0.6% of the population.</p>
+<p>בערך 1 מכל 20 נדבקים ב COVID-19 מגיע לטיפול נמרץ.[^icu_covid] במדינה עשירה כמו ארצות הברית, יש מיטת טיפול נמרץ אחת לכל 3,400 אנשים.[^icu_us] לכן בארצות הברית אפשר לטפל במצב שבו 20 מכל 3,400 אנשים נדבקים - או 0.6% מהאוכלוסיה. </p>
 <p>[^icu_covid]: <a href="https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/">&quot;Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group&quot;</a>. Between 4.9% to 11.5% of <em>all</em> COVID-19 cases required ICU. Generously picking the lower range, that&#39;s 5% or 1 in 20. Note that this total is specific to the US&#39;s age structure, and will be higher in countries with older populations, lower in countries with younger populations.</p>
 <p>[^icu_us]: “Number of ICU beds = 96,596”. From <a href="https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19">the Society of Critical Care Medicine</a> USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. </p>
 <p>Even if we <em>more than tripled</em> that capacity to 2%, here&#39;s what would&#39;ve happened <em>if we did absolutely nothing:</em></p>
+<p>הנה מה שהיה קורה אם לא היינו עושים כלום, בהנחה שהיינו מגדילים את כמות המיטות ל 2% (יותר מפי 3):</p>
 <div class="sim">
         <iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
 <p>Not good.</p>
+<p>לא טוב.</p>
 <p>That&#39;s what <a href="http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">the March 16 Imperial College report</a> found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
 (remember: total cases <em>overshoots</em> herd immunity)</p>
+<p>זה מה שגילה <a href="http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">המחקר של איפיריאל קולג&#39; מה-16 למרץ</a> אם לא נעשה כלום יגמרו לנו המיטות במצב שבו 80% מהאוכלוסיה נדבקהץ</p>
 <p>Even if only 0.5% of infected die – a generous assumption when there&#39;s no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... <em>IF we did nothing.</em></p>
+<p>אפילו אם רק 0.5% מהנדבקים מתים - הנחה נדיבה במצב שבו נגמרו המיטות בטיפול נמרץ, במדינה כמו ארצות הברית, עם 300 מיליון אנשים, 0.5% מתוך 80% מתוך 300 מיליון = 1.2 מיליון מתים...</p>
 <p>(Lots of news &amp; social media reported &quot;80% will be infected&quot; <em>without</em> &quot;IF WE DO NOTHING&quot;. Fear was channelled into clicks, not understanding. <em>Sigh.</em>)</p>
+<p>)הרבה אתרי חדשות ופוסטים במדיה החברתית אומרים &quot;80%&quot; ידבקו <em>בלי</em> להגיד &quot;אם לא נעשה כלום&quot;. הופכים פחד לקליקים.(</p>
 <p>###Scenario 1: Flatten The Curve / Herd Immunity</p>
+<p>###תרחיש 1: משטחים את העקוה/חסינות עדר</p>
 <p>The &quot;Flatten The Curve&quot; plan was touted by every public health organization, while the United Kingdom&#39;s original &quot;herd immunity&quot; plan was universally booed. They were <em>the same plan.</em> The UK just communicated theirs poorly.[^yong]</p>
 <p>[^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”</p>
 <pre><code>From a [<span class="hljs-string">The Atlantic article by Ed Yong</span>](<span class="hljs-link">https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/</span>)
 </code></pre><p>Both plans, though, had a literally fatal flaw.</p>
+<p>שתי התכניות הללו סובלות מפגם קטלני</p>
 <p>First, let&#39;s look at the two main ways to &quot;flatten the curve&quot;: handwashing &amp; physical distancing.</p>
+<p>קודם כל, בואו נסתכל על שתי הדרכים המרכזיות &quot;לשטח את העקומה&quot;: שטיפת ידיים וריחוק חברתי.</p>
 <p>Increased handwashing cuts flus &amp; colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let&#39;s assume handwashing can reduce R by <em>up to</em> 25%, and distancing can reduce R by <em>up to</em> 70%:</p>
+<p>שטיפת ידיים מוגברת מורידה את התפשטות נגיפי השפעת בערך ב 25% במדינות מפותחות[^handwashing], וסגר בלונדון הוריד את כמות המגעים הקרובים בערך ב 70%. בוא נניח ששטיפת ידיים יכולה לצמצם את R ב<em>עד</em> 25%, וריחוק חברתי יכול לצמצם את R ב <em>עד</em> [^london]70%:</p>
 <p>[^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x">Rabie, T. and Curtis, V.</a> Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.</p>
 <p>[^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. <a href="https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html">Jarvis and Zandvoort et al</a></p>
 <p><strong>Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:</strong> (this calculator visualizes their <em>relative</em> effects, which is why increasing one <em>looks</em> like it decreases the effect of the others.[^log_caveat])</p>
+<p><strong>שחקו עם המחשבון הזה כדי לראות איך אחוז שטיפת היידים אצל אנשים שאינם _S, וריחוק חברתי מצמצמים את R:</strong> )החישוב הזה מציג את ההשפעה <em>היחסית</em> ולכן הגדלה של אחד הגורמים <em>נראית</em> כאילו היא מקטינה את האחרים.[^log_caveat])</p>
 <p>[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we&#39;d have to explain <em>logarithmic scales.</em></p>
 <div class="sim">
         <iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
 <p>Now, let&#39;s simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only <em>mild</em> physical distancing – so that R is lower, but still above 1:</p>
+<p>בוא נבדוק מה היה קורה אם בתחילת מרץ 2020 היינו מגבירים את שטיפת הידיים אבל מפעילים רק ריחוק חברתי <em>קל</em> - כך ש R היה נמוך יותר רבל עדיין מעל 1:</p>
 <div class="sim">
         <iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
 <p>Three notes:</p>
+<p>שלוש הערות:</p>
 <ol>
 <li><p>This <em>reduces</em> total cases! <strong>Even if you don&#39;t get R &lt; 1, reducing R still saves lives, by reducing the &#39;overshoot&#39; above herd immunity.</strong> Lots of folks think &quot;Flatten The Curve&quot; spreads out cases without reducing the total. This is impossible in <em>any</em> Epidemiology 101 model. But because the news reported &quot;80%+ will be infected&quot; as inevitable, folks thought total cases will be the same no matter what. <em>Sigh.</em></p>
 </li>
+<li><p>הגישה הזו מפחיתה את <em>סך הכל המקרים</em>! <strong>אפילו אם לא הצלחנו להגיע ל ר &gt;1, הקטנת R עדיין מצילה חיים על ידי הפחתת כמות האנשים שיחלו מעבר לנקודה של חסינות עדר.</strong> הרבה אנשים חושבים שאם &quot;נשטח את העקומה&quot; נפזר את המקרים על יותר זמן אבל לא נקטין את סך הכל המקרים. זה לא יכול להיות <em>בשום</em> מודל אפידימיולוגי.</p>
+</li>
 <li><p>Due to the extra interventions, current cases peak <em>before</em> herd immunity is reached. In fact, in this simulation, total cases only overshoots <em>a tiny bit</em> above herd immunity – the UK&#39;s plan! At that point, R &lt; 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...</p>
+</li>
+<li><p>בזכות הריחוק המצומצם ושטיפת הידיים, מספר המקרים מגיע לשיא <em>לפני</em> הגעה לחסינות עדר. למעשה, מספר המקרים הכולל עובר את המספר שדרוש לחסינות עדר רק במעט! זו התכנית הבריטית! בנקודה הזו R &gt; 1, אפשר להסיר את כל ההגבלות וההתפרצות לא תחזור!, תכנית מצויינת! למעט בעיה קטנה אחת...</p>
 </li>
 <li><p>You still run out of ICUs. For several months. (and remember, we <em>already</em> tripled ICUs for these simulations)</p>
 </li>
+<li><p>אנחנו עדיין עוברים את כמות במיטות בטיפול נמרץ. למשך כמה חודשים (זכרו שהכפלנו את כמות המיטות פי שלוש לייתר ביטחון).</p>
+</li>
 </ol>
 <p>That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at <strong>mitigation</strong> (reduce R, but R &gt; 1) will fail. The only way out is <strong>suppression</strong> (reduce R so that R &lt; 1).</p>
+<p>זה היה עוד ממצא של המחקר של אימפיריאל קולג&#39; מה 16 למרץ ששכנע את הבריטים לוותר על התכנית הזו. כל ניסיון &quot;לשטח את העקומה&quot; (להקטין את R אבל עדיין R &lt; 1) ייכשל. הדרך היחידה היא &quot;לשבור את העקומה&quot; (להקטין את R כך ש R &gt; 1(</p>
 <p><img src="pics/mitigation_vs_suppression.png" alt=""></p>
 <p>That is, don&#39;t merely &quot;flatten&quot; the curve, <em>crush</em> the curve. For example, with a...</p>
 <p>###Scenario 2: Months-Long Lockdown</p>
