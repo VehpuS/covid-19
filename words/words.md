@@ -1002,17 +1002,28 @@ Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most
 
 1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
 
+1( נעשה סדרה של צעדים להקטנת R שלא יהיו קשים מדי עד שנגיע לחסינות עדר (זה יגמר בהרבה מתים ונזק לריאות ולא יעבוד אם יתברר שהחסינות עוברת מהר)
+
 2) Do the R < 1 interventions forever. Contact tracing & wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests & wearing condoms became a new norm in the post-HIV world.
+
+
+2( נמשיך לעשות צעדים להקטנת R לנצח. מסיכות ובידוד מגעים יהיו חלק מהחיים בעידן שאחרי COVID-19.
 
 3) Do the R < 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing *anyway!*) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:
 
+3( נעשה צעדים להקטנת R עד שנצליח לפתח טיפול שיגרום לCOVID-19 להיות מחלה שלא גורמת לכל כך הרבה טיפול נמרץ. (אז זה אנחנו צריכים לעשות בכל מקרה) הקטנת היקף האישפוזים פי 10 שקולה להגדלת כמות מיטת טיפול נמרץ פי 10.
+
 **Here's a simulation of *no* lasting immunity, *no* vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:**
+
+**הנה סימולציה שמניחה *שאין* חסינות ארוכת טווח, *אין* חיסון, ואין אפילו צעדי מניה. רק הגדלה הדרגתית של קיבולת טיפול נמרץ כדי להתמודד עם השיאים**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
 
 Even under the *worst* worst-case scenario... life perseveres.
+
+גם במקרה *הכי גרוע* הזה... החיים ממשיכים.
 
 . . .
 
