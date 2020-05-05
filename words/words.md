@@ -294,7 +294,7 @@ Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, an
 
 This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
 
-זה קורה בגלל שכשיש יותר אנשים שאינם S מסף החסינות, אנחנו מקבלים R>1. וכש R>1 כמות המקרים החדשים מספיקה לגדול - וזה השיא.
+זה קורה בגלל שכשיש יותר אנשים שאינם S מסף החסינות, אנחנו מקבלים R>1. וכש R>1 כמות המקרים החדשים מפסיקה לגדול - וזה השיא.
 
 **If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
 
@@ -357,7 +357,7 @@ Brace yourselves for an emergency landing...
 
 ###Scenario 0: Do Absolutely Nothing
 
-###תרחיש 0: לא לעשות שום דבק
+###תרחיש 0: לא לעשות שום דבר
 
 Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
 
@@ -396,9 +396,11 @@ Even if only 0.5% of infected die – a generous assumption when there's no more
 
 ###Scenario 1: Flatten The Curve / Herd Immunity
 
-###תרחיש 1: משטחים את העקוה/חסינות עדר
+###תרחיש 1: משטחים את העקומה/חסינות עדר
 
 The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
+
+התכנית "לשטח את  העקומה" והתכנית הברטית של "חסינות עדר" היו בעצם *אותה תכנית*. הבריטים פשוט לא הסבירו אותה בצורה מוצלחת.[^yong] 
 
 [^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
     
@@ -432,7 +434,7 @@ Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwa
 
 Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
 
-בוא נבדוק מה היה קורה אם בתחילת מרץ 2020 היינו מגבירים את שטיפת הידיים אבל מפעילים רק ריחוק חברתי *קל* - כך ש R היה נמוך יותר רבל עדיין מעל 1:
+בוא נבדוק מה היה קורה אם בתחילת מרץ 2020 היינו מגבירים את שטיפת הידיים אבל מפעילים רק ריחוק חברתי *קל* - כך ש R היה נמוך יותר אבל עדיין מעל 1:
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
@@ -463,9 +465,15 @@ That was the other finding of the March 16 Imperial College report, which convin
 
 That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
 
+למשל...
+
 ###Scenario 2: Months-Long Lockdown
 
+###תרחיש 2: סגר למשך כמה חודשים
+
 Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+
+בוא נראה מה קורה אם אנחנו "מרסקים" את העוקמה עם סגר של חמישה חודשים, מקטינים את _I כמעט לאפס ואז *סוף סוף* חוזרים לחיים נורמאליים:
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
@@ -473,19 +481,33 @@ Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <
 
 Oh.
 
+אה...
+
 This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+
+זה "הגל השני" שכולם מדברים עליו. ברגע שאנחנו מסירים את הסגר, אנחנו מקבלים שוב R > 1. מספיק שישאר לנו _I אחד (או _I אחד שמגיע מחו"ל) כדי לגרום להתפרצות חמורה כמעט כמו תרחיש 0: לא עושים כלום.
 
 **A lockdown isn't a cure, it's just a restart.**
 
+**סגר לא יכול להיות תרופה לבעיה. מה שהוא עושה זה "מאפס" את המצב ומחזיר אותנו לנקודת ההתחלה.**
+
 So, what, do we just lockdown again & again?
+
+אז מה? סגר ועוד סגר ועד סגר עד אין סוף?
 
 ###Scenario 3: Intermittent Lockdown
 
+###תרחיש 3: סגר לחלופין
+
 This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+
+התרחיש הזה הוצע בנייר של האימפריאל קולג' מה 16 למרץ ושוב בנייר של הרוורד. [^lockdown_harvard]
 
 [^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
 **Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+
+**הנה הסימולציה:** (אחרי שהתרחיש המוקלט יסתיים, תוכלו לקבוע את הפרמטרים שלכם וגם לשחק עם הנתונים *תוך כדי* שהסימולציה פועלת! אפשר גם לעצור ולהמשיך את הסימולטור ולשנות את המהירות)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
@@ -493,27 +515,50 @@ This solution was first suggested by the March 16 Imperial College report, and l
 
 This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
 
+הצלחנו לשמור את כמות המקרים החמורים *מתחת* לקיבולת של הטיפול הנמרץ! וזה הרבה יותר טוב מסגר של 18 חודשים עד שיהיה חיסון זמין. אנחנו צריכים רק... להטיל סגר לכמה חודשים, לפתוח לכמה חודשים, ולחזור על זה עד שיהיה חיסון זמין. (ואם לא יהיה חיסון זמין עד שנגיע לחסינות עדר... ב 2022)
+
 Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
 
+כמה שנחמד לנו למתוח קווים של "קיבולת טיפול נמרץ" יש עדיין כמה דברים שהסימולטור שלנו לא תופס. למשל:
+
 **Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+
+**בריאות נפשית:** בדידות היא אחד מגורמי הסיכון לדיכאון, חרדה והתאבדויות, והיא קשורה למוות מוקדם כמו עישון של 15 סיגריות ליום.[^loneliness] 
 
 [^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
 
 **Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
 
+**איתנות כלכלית:** "מה עם הכלכלה" נשמע כאילו אכפת לך יותר מכמה גרושים מאשר מחיי אדם, אבל "הכלכלה" היא לא רק משחקים במניות: היא היכולת של אנשים לספק אוכל וקורת גג למשפחה שלהם, להשקיע בעתיד של הילדים שלהם, להינות מעומנות, אוכל ומשחקי מחשב - הדברים שמרכיבים את מה שאנחנו קוראים לו החיים שלנו. חוץ מזה, לעוני לבדו יש השפעה נוראית על בריאות פיזית ונפשית.
+
 Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+
+זה לא אומר שלא נצטרך לעשות סגר שוב! נראה איך אפשר להשתמש בסגר בהמשך, אבל זה לא אידיאלי.
 
 But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
 
+רגע... אבל טיוואן ודרום קוריאה הצליחו לעצור את התפשטות המגפה כבר 4 חודשים בלי סגר ארוך?
+
 How?
+
+איך?
 
 ###Scenario 4: Test, Trace, Isolate
 
+###תרחיש 4: בדיקות, מעקב מגעים, בידודים
+
 *"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
+
+*"יכולנו אולי לעשות מה שהם עשו מההתחלה אבל עכשיו מאוחר מדי. פספסנו את ההתחלה."*
 
 But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **and a fresh start is what we need.**
 
+אבל זה בדיוק העניין. "סגר לא פותר את הבעיה - הוא מחזיר אותנו לנקודת ההתחלה"... **וזה בדיוק מה שאנחנו צריכים - לחזור לנקודת ההתחלה!**
+
 To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
+
+כדי להבין איך טיוואן וקואיה הדרומית עצרו את התפשטות המגיפה, אנחנו צריכים להבין את לוח הזמנים של חולה COVID-19 טיפוסי[^timeline]:
+
 
 [^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
     
@@ -525,37 +570,61 @@ To understand how Taiwan & South Korea contained COVID-19, we need to understand
 
 If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
 
+אם אנשים נכנסים לבידוד כשהם יודעים שהם חולים (כלומר מרגישים סימטפומים), הוירוס יכול להמשיך להתפשט:
+
 ![](pics/timeline2.png)
 
 And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
+
+למעשה, 44% מכל ההדבקות הן הדבקות כאלו - *פרה-סימפטומטיות*! [^pre_symp]
 
 [^pre_symp]: “We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
 But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
 
+אבל אם נמצא *ונבודד* את כל המגעים הקרובים של מי שפיתח סימפטומים... נהיה צעד אחד קדימה ונוכל לעצור את התפשטות המגפה.
+
 ![](pics/timeline3.png)
 
 This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
+
+זה נקרא **מעקב מגעים**. זה רעיון שקיים כבר זמן ארוך, השתמשו בו כדי לעצור את התפרצות האבולה[^ebola], ועכשיו טיוואן וקוריאה הדרומית משתמשות בו כחלק ממלחמה שלהן במגיפה.
 
 [^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
 (It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.)
 
+)השיטה הזו מאפשרת לנו גם להשתמש בבדיקות שיש לנו בצורה יעילה יותר ולמצוא נשאים בלי סימפטומים _I בלי לבדוק את כל האוכלוסיה.(
+
 Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
+
+בעבר, איתור מגעים נעשה באמצעות ראיונות עם חולים סימפטומטים אבל ראיונות כאלו איטיים מדי בשביל חלון ההדבקה של הקורונה (48 שעות) ולכן נדרשת עזרה של אפליקציות לאיתור מגעים.
 
 (This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
+)הרעיון של שימוש באפליקציות לאיתור מגעים לא בא מעולם ביטחון או ההיי טק הוא הוצע לראשונה על ידי [צוות של אפידימיולוגים מאוקספורד](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).(
+
 Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
+
+רגע, רגע, אפליקציות שרושמות עם מי הייתי במגע?... זה אומר לוותר לגמרי על הפרטיות שלי?
 
 Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, a team of epidemiologists & cryptographers (including one of us, Marcel Salathé) is *already* making a contact tracing app – with code available to the public – that reveals **no info about your identity, location, who your contacts are, or even *how many contacts* you've had.**
 
+ממש לא! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, קבוצה של אפידימיולוגים ומומחי הצפנה (כולל אחד ממחברי המאמר הזה, Marchel Salathé) כבר עובדים על אפליקציה למעקב אחרי מגעים - שהקוד שלה פתוח לציבור - **שלא חושפת את הזהות והמיקום שלך, מי היו המגעים שלך ואפילו לא *כמה מגעים היו לך*.** 
+
 Here's how it works:
+
+ככה זה עובד:
 
 ![](pics/dp3t.png)
 
 (& [here's the full comic](https://ncase.me/contact-tracing/))
 
+(& [והנה הקומיקס המלא (באנגלית)](https://ncase.me/contact-tracing/))
+
 Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
+
+הפרוייקט הזה, ופרוייקטים דומים כמו TCN Protocol[^tcn] ו MIT PACT[^pact], היוו השראה ל Google ו Apple להכניס איתור מגעים  מבוסס פרטיות לתוך Android/iOS.[^gapple] ) לא סומכים על גוגל ואפל? מעולה! היופי של המערכת הזו הוא שלא צריך לסמוך על אף אחד!) בקרוב ראשויות הבריאות יבקשו מכם להוריד אפליקציה. אם הקוד פתוח וזמין והיא מבוססת על הרעיונות האלו, הורידו אותה!
 
 [^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
@@ -564,6 +633,8 @@ Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've in
 [^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Note they're not making the apps *themselves*, just creating the systems that will *support* those apps.
 
 But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
+
+אבל מה עם אנשים שאין להם טלפון חכם? או הדבקות דרך ידיות של דלתות וכפתורים של מעלויות? או מקרים שלא יפתחו סימפטומים בכלל? אפליקציות לאיתור מגעים לא יכולות לתפוס את כל ההדבקות... *וזה בסדר גמור!* אנחנו לא צריכים לתפוס את *כל* ההדבקות, רק 60% כדי לקבל R < 1.
 
 (Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
 
@@ -574,6 +645,8 @@ But what about folks without smartphones? Or infections through doorknobs? Or "t
     So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
 
 Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
+
+בידוד חולים *עם סימפטומים* יכול להוריד את R עד 40%, ובידוד מגעים להם יכול להוריד את R עד 50%[^oxford]:
 
 [^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
     
@@ -590,13 +663,19 @@ Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining thei
 
 Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
 
+לכן, אפילו אם לא נצליח לבודד 100% מהמגעים, אנחנו יכולים להגיע ל R < 1 *בלי סגר!* הרבה יותר טוב לבריאות הנפשית והכלכלית שלנו. (לגבי מי שצריך להיכנס לסגר/בידוד - הממשלות צריכות לתמוך בהם, ימי מחלה וכד' יעלו הרבה פחות מסגרים חוזרים.)
+
 We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
+
+אנחנו שומרים על R < 1 עד שיש לנו חיסון שיכול להפוך _S אנשים חשופים ל _I אנשים חסינים. חיסון עדר בדרך *הנכונה*:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
 (Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
+
+)שימו לב: המחשבון הזה מניח שחיסון יעיל ב 100%, בפועל נצטרך לחסן *יותר* אנשים כדי לקבל חסינות עדרץ(
 
 Okay, enough talk. Here's a simulation of:
 
@@ -605,17 +684,31 @@ Okay, enough talk. Here's a simulation of:
 3. Vaccinate enough people, which means...
 4. We win.
 
+
+OK בואו נראה, הנה סימולציה של:
+
+1. כמה חודשים של סגר, עד שנוכל...
+2. לעבור למעקב ובידוד של מגעים, עד שנוכל...
+3. לחסן מספיק אנשים ואז...
+4. ניצחנו.
+
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
 So that's it! That's how we make an emergency landing on this plane.
 
+זהו ככה אנחנו מנחיתים את הסימולטור שלנו.
+
 That's how we beat COVID-19.
+
+ככה ננצח את COVID-19.
 
 ...
 
 But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
+
+אבל מה אם זה לא יעבוד כמו שאנחנו מקווים? דברים כבר
 
 The pessimist invents the parachute.
 
