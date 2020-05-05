@@ -3,13 +3,16 @@
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
         	What Happens Next?
+			מה יקרה עכשיו?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
 			COVID-19 Futures, Explained With Playable Simulations
+			העתיד עם COVID-19 בסימולציות אינטראקטיביות
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
 				🕐 30 min play/read
+				🕐 30 דקות קריאה/משחק 
 				&nbsp;&middot;&nbsp;
 			</b>
 			by
@@ -438,7 +441,7 @@ Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwa
 
 **Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
 
-**שחקו עם המחשבון הזה כדי לראות איך אחוז שטיפת היידים אצל אנשים שאינם _S, וריחוק חברתי מצמצמים את R:** )החישוב הזה מציג את ההשפעה *היחסית* ולכן הגדלה של אחד הגורמים *נראית* כאילו היא מקטינה את האחרים.[^log_caveat])
+**שחקו עם המחשבון הזה כדי לראות איך אחוז שטיפת היידים אצל אנשים שאינם <icon s></icon>, וריחוק חברתי מצמצמים את R:** )החישוב הזה מציג את ההשפעה *היחסית* ולכן הגדלה של אחד הגורמים *נראית* כאילו היא מקטינה את האחרים.[^log_caveat])
 
 [^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
 
@@ -681,7 +684,7 @@ Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdo
 
 We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
 
-אנחנו שומרים על R < 1 עד שיש לנו חיסון שיכול להפוך _S אנשים חשופים ל _I אנשים חסינים. חיסון עדר בדרך *הנכונה*:
+אנחנו שומרים על R < 1 עד שיש לנו חיסון שיכול להפוך <icon s></icon> אנשים חשופים ל _I אנשים חסינים. חיסון עדר בדרך *הנכונה*:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
@@ -732,7 +735,7 @@ The pessimist invents the parachute.
 
 What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
 
-מה אם _R0 הרבה יותר גדול ממה שהערכנו, וכל הצעדים שתוארו עד עכשיו, כולל הרחקה חברתית, *עדיין* לא מספיקים כדי להגיע ל R < 1?
+מה אם R<sub>0</sub> הרבה יותר גדול ממה שהערכנו, וכל הצעדים שתוארו עד עכשיו, כולל הרחקה חברתית, *עדיין* לא מספיקים כדי להגיע ל R < 1?
 
 Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
 
@@ -930,7 +933,7 @@ For these simulations, let's say it's 1 year.
 
 **Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
 
-**הנה סימולציה שמתחילה ב 100% _R**, דועכת אקספוננציאלית לאנשים חשופים ללא חסינות _S :אחרי שנה
+**הנה סימולציה שמתחילה ב 100% <icon r></icon>**, דועכת אקספוננציאלית לאנשים חשופים ללא חסינות <icon s></icon> :אחרי שנה
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
@@ -976,7 +979,7 @@ Oh.
 
 Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
 
-הקיץ מחריף את הקפיצות *וגם* גורם להן לחזור בקביעות! זה קורה בגלל שהקיץ מפחית את _I החדשים, אבל אז גורם גם לירידה בכמות המחוסנים החדשים _R ולכן החסינות יורדת בקיץ וגורמת לקפיצה קבועה בחורף.
+הקיץ מחריף את הקפיצות *וגם* גורם להן לחזור בקביעות! זה קורה בגלל שהקיץ מפחית את _I החדשים, אבל אז גורם גם לירידה בכמות המחוסנים החדשים <icon r></icon> ולכן החסינות יורדת בקיץ וגורמת לקפיצה קבועה בחורף.
 
 Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
 
