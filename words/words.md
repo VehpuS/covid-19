@@ -309,11 +309,11 @@ Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, an
 
 **NOTE: Total cases *does not stop* at herd immunity, but overshoots it!** And it crosses the threshold *exactly* when current cases peak. (This happens no matter how you change the settings – try it for yourself!)
 
-** שימו לב: המספר הכללי של המקרים *לא מפסיק לעלות* כשמגיעים לחסינות עדר. הוא ממשיך לטפס ** והוא חוצה את הסף של חסינות העדר בדיוק כשכמות המקרים מגיעה לשיא שלה (ולא משנה איך תשנו את ההגדרות - נסו בעצמכם)
+** שימו לב: המספר הכללי של המקרים *לא מפסיק לעלות* כשמגיעים לחסינות עדר. הוא ממשיך לטפס ** והוא חוצה את הסף של חסינות העדר בדיוק כשכמות המקרים מגיעה לשיא שלה. (ולא משנה איך תשנו את ההגדרות - נסו בעצמכם)
 
 This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
 
-זה קורה בגלל שכשיש יותר אנשים שאינם S מסף החסינות, אנחנו מקבלים R>1. וכש R>1 כמות המקרים החדשים מפסיקה לגדול - וזה השיא.
+זה קורה בגלל שכשיש יותר אנשים שאינם <icon s></icon> מסף החסינות, אנחנו מקבלים R < 1. וכש R < 1 כמות המקרים החדשים מפסיקה לגדול - וזה השיא.
 
 **If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
 
@@ -327,7 +327,7 @@ This is because when there are more non-<icon s></icon>s than the herd immunity 
 
 It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
 
-זה מרגיש פרדוקסלי. COVID-19 היא מחלה מדבקת ביותר, אבל כדי לעצור אותה, אנחנו צריכים לעצור יותר מ 60% מההדבקות. 60% זה אולי לא ציון מרשים במיוחד בבית הספר אבל אם R0=2.5, ונצליח להקטין אותו ב 61% נקבל R = 0.975, וזה פחות מ1, המגיפה נעצרה! )הנוסחא המדוייקת:[^exact_formula](
+זה מרגיש פרדוקסלי. COVID-19 היא מחלה מדבקת ביותר, אבל כדי לעצור אותה, אנחנו צריכים לעצור יותר מ 60% מההדבקות. 60% זה אולי לא ציון מרשים במיוחד בבית הספר אבל אם R<sub>0</sub>=2.5, ונצליח להקטין אותו ב 61% נקבל R = 0.975, וזה פחות מ 1, המגיפה נעצרה! (הנוסחא המדוייקת:[^exact_formula])
 
 
 [^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
@@ -346,7 +346,7 @@ It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" n
 
 (If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a "Sandbox Mode" at the end of this guide, where you can plug in your *own* numbers, and simulate what happens.)
 
-)אם נראה לכם שהערך של R0 או מספר אחר בסימולציה הזו נמוך/גבוה מדי, זה מצויין! בסוף המאמר יש סימולטור בוא תוכלו להזין את המספרים *שלכם* ולראות מה יוצא(
+(אם נראה לכם שהערך של R0 או מספר אחר בסימולציה הזו נמוך/גבוה מדי, זה מצויין! בסוף המאמר יש סימולטור בוא תוכלו להזין את המספרים *שלכם* ולראות מה יוצא)
 
 *Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:
 
@@ -354,13 +354,15 @@ It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" n
 
 Getting R < 1.
 
-להגיע ל R>1.
+להגיע ל R < 1.
 
 So now, let's use our "epidemic flight simulator" to figure this out: How can we get R < 1 in a way **that also protects our mental health *and* financial health?**
 
-עכשיו, בואו נשתמש בסימולטור שלנו כדי לבוק איך אנחנו יכולים להגיע ל R > 1 ש**שומרת על הבריאות הנפשית והפיננסית שלנו**.
+עכשיו, בואו נשתמש בסימולטור שלנו כדי לבדוק איך אנחנו יכולים להגיע ל R > 1 בדרך ש**שומרת על הבריאות הנפשית והפיננסית שלנו**.
 
 Brace yourselves for an emergency landing...
+
+היכנו לנחיתת חירום...
 
 <div class="section chapter">
     <div>
@@ -372,7 +374,7 @@ Brace yourselves for an emergency landing...
 
 ...could have been worse. Here's a parallel universe we avoided:
 
-...יכלו להיות יותר גרועים. הנה כמה יקומים מקבילים שלא הגענו אליהם
+...יכלו להיות יותר גרועים. הנה כמה יקומים מקבילים שלא הגענו אליהם:
 
 ###Scenario 0: Do Absolutely Nothing
 
@@ -402,16 +404,16 @@ That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc
 (remember: total cases *overshoots* herd immunity)
 
 
-זה מה שגילה [המחקר של איפיריאל קולג' מה-16 למרץ](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) אם לא נעשה כלום יגמרו לנו המיטות במצב שבו 80% מהאוכלוסיה נדבקהץ
+זה מה שגילה [המחקר של אימפיריאל קולג' מה-16 למרץ](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) אם לא נעשה כלום יגמרו לנו המיטות במצב שבו 80% מהאוכלוסיה נדבקה.
 
 
 Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
 
-אפילו אם רק 0.5% מהנדבקים מתים - הנחה נדיבה במצב שבו נגמרו המיטות בטיפול נמרץ, במדינה כמו ארצות הברית, עם 300 מיליון אנשים, 0.5% מתוך 80% מתוך 300 מיליון = 1.2 מיליון מתים...
+אפילו אם רק 0.5% מהנדבקים מתים - הנחה נדיבה במצב שבו נגמרו המיטות בטיפול נמרץ - במדינה כמו ארצות הברית, עם 300 מיליון אנשים, 0.5% מתוך 80% מתוך 300 מיליון = 1.2 מיליון מתים...
 
 (Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
 
-)הרבה אתרי חדשות ופוסטים במדיה החברתית אומרים "80%" ידבקו *בלי* להגיד "אם לא נעשה כלום". הופכים פחד לקליקים.(
+(הרבה אתרי חדשות ופוסטים במדיה החברתית אומרים "80%" ידבקו *בלי* להגיד "אם לא נעשה כלום". הופכים פחד לקליקים.)
 
 ###Scenario 1: Flatten The Curve / Herd Immunity
 
@@ -427,7 +429,7 @@ The "Flatten The Curve" plan was touted by every public health organization, whi
 
 Both plans, though, had a literally fatal flaw.
 
-שתי התכניות הללו סובלות מפגם קטלני
+שתי התכניות הללו סובלות מפגם קטלני.
 
 First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
 
@@ -435,7 +437,7 @@ First, let's look at the two main ways to "flatten the curve": handwashing & phy
 
 Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
 
-שטיפת ידיים מוגברת מורידה את התפשטות נגיפי השפעת בערך ב 25% במדינות מפותחות[^handwashing], וסגר בלונדון הוריד את כמות המגעים הקרובים בערך ב 70%. בוא נניח ששטיפת ידיים יכולה לצמצם את R ב*עד* 25%, וריחוק חברתי יכול לצמצם את R ב *עד* [^london]70%:
+שטיפת ידיים מוגברת מורידה את התפשטות נגיפי השפעת בערך ב 25% במדינות מפותחות[^handwashing], וסגר בלונדון הוריד את כמות המגעים הקרובים בערך ב 70%. בואו נניח ששטיפת ידיים יכולה לצמצם את R ב*עד* 25%, וריחוק חברתי יכול לצמצם את R ב *עד* [^london]70%:
 
 [^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
 
@@ -443,7 +445,7 @@ Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwa
 
 **Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
 
-**שחקו עם המחשבון הזה כדי לראות איך אחוז שטיפת היידים אצל אנשים שאינם <icon s></icon>, וריחוק חברתי מצמצמים את R:** )החישוב הזה מציג את ההשפעה *היחסית* ולכן הגדלה של אחד הגורמים *נראית* כאילו היא מקטינה את האחרים.[^log_caveat])
+**שחקו עם המחשבון הזה כדי לראות איך אחוז שטיפת היידים אצל אנשים שאינם <icon s></icon>, וריחוק חברתי מצמצמים את R:** (החישוב הזה מציג את ההשפעה *היחסית* ולכן הגדלה של אחד הגורמים *נראית* כאילו היא מקטינה את האחרים.[^log_caveat])
 
 [^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
 
@@ -453,7 +455,7 @@ Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwa
 
 Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
 
-בוא נבדוק מה היה קורה אם בתחילת מרץ 2020 היינו מגבירים את שטיפת הידיים אבל מפעילים רק ריחוק חברתי *קל* - כך ש R היה נמוך יותר אבל עדיין מעל 1:
+בואו נבדוק מה היה קורה אם בתחילת מרץ 2020 היינו מגבירים את שטיפת הידיים אבל מפעילים רק ריחוק חברתי *קל* - כך ש R היה נמוך יותר אבל עדיין מעל 1:
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
@@ -465,11 +467,11 @@ Three notes:
 
 1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
 
-1. הגישה הזו מפחיתה את *סך הכל המקרים*! **אפילו אם לא הצלחנו להגיע ל ר >1, הקטנת R עדיין מצילה חיים על ידי הפחתת כמות האנשים שיחלו מעבר לנקודה של חסינות עדר.** הרבה אנשים חושבים שאם "נשטח את העקומה" נפזר את המקרים על יותר זמן אבל לא נקטין את סך הכל המקרים. זה לא יכול להיות *בשום* מודל אפידימיולוגי.
+1. הגישה הזו מפחיתה את *סך הכל המקרים*! **אפילו אם לא הצלחנו להגיע ל R < 1, הקטנת R עדיין מצילה חיים על ידי הפחתת כמות האנשים שיחלו מעבר לנקודה של חסינות עדר.** הרבה אנשים חושבים שאם "נשטח את העקומה" נפזר את המקרים על יותר זמן אבל לא נקטין את סך הכל המקרים. זה לא יכול להיות *בשום* מודל אפידימיולוגי.
 
 2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
 
-2. בזכות הריחוק המצומצם ושטיפת הידיים, מספר המקרים מגיע לשיא *לפני* הגעה לחסינות עדר. למעשה, מספר המקרים הכולל עובר את המספר שדרוש לחסינות עדר רק במעט! זו התכנית הבריטית! בנקודה הזו R > 1, אפשר להסיר את כל ההגבלות וההתפרצות לא תחזור!, תכנית מצויינת! למעט בעיה קטנה אחת...
+2. בזכות הריחוק המצומצם ושטיפת הידיים, מספר המקרים מגיע לשיא *לפני* הגעה לחסינות עדר. למעשה, מספר המקרים הכולל עובר את המספר שדרוש לחסינות עדר רק במעט! זו התכנית הבריטית! בנקודה הזו R < 1, אפשר להסיר את כל ההגבלות וההתפרצות לא תחזור!, תכנית מצויינת! למעט בעיה קטנה אחת...
 
 3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
 
@@ -477,7 +479,7 @@ Three notes:
 
 That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
 
-זה היה עוד ממצא של המחקר של אימפיריאל קולג' מה 16 למרץ ששכנע את הבריטים לוותר על התכנית הזו. כל ניסיון "לשטח את העקומה" (להקטין את R אבל עדיין R < 1) ייכשל. הדרך היחידה היא "לשבור את העקומה" (להקטין את R כך ש R > 1(
+זה היה עוד ממצא של המחקר של אימפיריאל קולג' מה 16 למרץ ששכנע את הבריטים לוותר על התכנית הזו. כל ניסיון "לשטח את העקומה" (להקטין את R אבל עדיין R > 1) ייכשל. הדרך היחידה היא "לשבור את העקומה" (להקטין את R כך ש R < 1)
 
 
 ![](pics/mitigation_vs_suppression.png)
@@ -492,7 +494,7 @@ That is, don't merely "flatten" the curve, *crush* the curve. For example, with 
 
 Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
 
-בוא נראה מה קורה אם אנחנו "מרסקים" את העוקמה עם סגר של חמישה חודשים, מקטינים את _I כמעט לאפס ואז *סוף סוף* חוזרים לחיים נורמאליים:
+בואו נראה מה קורה אם אנחנו "מרסקים" את העוקמה עם סגר של חמישה חודשים, מקטינים את <icon i></icon> כמעט לאפס ואז *סוף סוף* חוזרים לחיים נורמאליים:
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
@@ -504,7 +506,7 @@ Oh.
 
 This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
 
-זה "הגל השני" שכולם מדברים עליו. ברגע שאנחנו מסירים את הסגר, אנחנו מקבלים שוב R > 1. מספיק שישאר לנו _I אחד (או _I אחד שמגיע מחו"ל) כדי לגרום להתפרצות חמורה כמעט כמו תרחיש 0: לא עושים כלום.
+זה "הגל השני" שכולם מדברים עליו. ברגע שאנחנו מסירים את הסגר, אנחנו מקבלים שוב R > 1. מספיק שישאר לנו <icon i></icon> אחד (או <icon i></icon> אחד שמגיע מחו"ל) כדי לגרום להתפרצות חמורה כמעט כמו תרחיש 0: לא עושים כלום.
 
 **A lockdown isn't a cure, it's just a restart.**
 
@@ -520,7 +522,7 @@ So, what, do we just lockdown again & again?
 
 This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
 
-התרחיש הזה הוצע בנייר של האימפריאל קולג' מה 16 למרץ ושוב בנייר של הרוורד. [^lockdown_harvard]
+התרחיש הזה הוצע בנייר של האימפריאל קולג' מה 16 למרץ ושוב בנייר של הארוורד. [^lockdown_harvard]
 
 [^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
@@ -534,7 +536,7 @@ This solution was first suggested by the March 16 Imperial College report, and l
 
 This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
 
-הצלחנו לשמור את כמות המקרים החמורים *מתחת* לקיבולת של הטיפול הנמרץ! וזה הרבה יותר טוב מסגר של 18 חודשים עד שיהיה חיסון זמין. אנחנו צריכים רק... להטיל סגר לכמה חודשים, לפתוח לכמה חודשים, ולחזור על זה עד שיהיה חיסון זמין. (ואם לא יהיה חיסון זמין עד שנגיע לחסינות עדר... ב 2022)
+הצלחנו לשמור את כמות המקרים החמורים *מתחת* לקיבולת של הטיפול הנמרץ! וזה הרבה יותר טוב מסגר של 18 חודשים עד שיהיה חיסון זמין. אנחנו צריכים רק... להטיל סגר לכמה חודשים, לפתוח לכמה חודשים, ולחזור על זה עד שיהיה חיסון זמין. (ואם לא יהיה חיסון זמין, עד שנגיע לחסינות עדר... ב 2022)
 
 Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
 
@@ -548,7 +550,7 @@ Look, it's nice to draw a line saying "ICU capacity", but there's lots of import
 
 **Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
 
-**איתנות כלכלית:** "מה עם הכלכלה" נשמע כאילו אכפת לך יותר מכמה גרושים מאשר מחיי אדם, אבל "הכלכלה" היא לא רק משחקים במניות: היא היכולת של אנשים לספק אוכל וקורת גג למשפחה שלהם, להשקיע בעתיד של הילדים שלהם, להינות מעומנות, אוכל ומשחקי מחשב - הדברים שמרכיבים את מה שאנחנו קוראים לו החיים שלנו. חוץ מזה, לעוני לבדו יש השפעה נוראית על בריאות פיזית ונפשית.
+**איתנות כלכלית:** "מה עם הכלכלה" נשמע כאילו אכפת לך יותר מכמה גרושים מאשר מחיי אדם, אבל "הכלכלה" היא לא רק משחקים במניות: היא היכולת של אנשים לספק אוכל וקורת גג למשפחה שלהם, להשקיע בעתיד של הילדים שלהם, להינות מאומנות, אוכל ומשחקי מחשב - הדברים שמרכיבים את מה שאנחנו קוראים לו החיים שלנו. חוץ מזה, גם לעוני בעצמו יש השפעה נוראית על בריאות פיזית ונפשית.
 
 Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
 
@@ -576,7 +578,7 @@ But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **a
 
 To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
 
-כדי להבין איך טיוואן וקואיה הדרומית עצרו את התפשטות המגיפה, אנחנו צריכים להבין את לוח הזמנים של חולה COVID-19 טיפוסי[^timeline]:
+כדי להבין איך טיוואן וקוריאה הדרומית עצרו את התפשטות המגיפה, אנחנו צריכים להבין את לוח הזמנים של חולה COVID-19 טיפוסי[^timeline]:
 
 
 [^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
@@ -589,7 +591,7 @@ To understand how Taiwan & South Korea contained COVID-19, we need to understand
 
 If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
 
-אם אנשים נכנסים לבידוד כשהם יודעים שהם חולים (כלומר מרגישים סימטפומים), הוירוס יכול להמשיך להתפשט:
+אם אנשים נכנסים לבידוד כשהם יודעים שהם חולים (כלומר מרגישים סימפטומים), הוירוס יכול להמשיך להתפשט:
 
 ![](pics/timeline2.png)
 
@@ -613,7 +615,7 @@ This is called **contact tracing**. It's an old idea, was used at an unprecedent
 
 (It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.)
 
-)השיטה הזו מאפשרת לנו גם להשתמש בבדיקות שיש לנו בצורה יעילה יותר ולמצוא נשאים בלי סימפטומים _I בלי לבדוק את כל האוכלוסיה.(
+(השיטה הזו מאפשרת לנו גם להשתמש בבדיקות שיש לנו בצורה יעילה יותר ולמצוא נשאים בלי סימפטומים <icon i></icon> בלי לבדוק את כל האוכלוסיה.)
 
 Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
 
@@ -621,7 +623,7 @@ Traditionally, contacts are found with in-person interviews, but those *alone* a
 
 (This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
-)הרעיון של שימוש באפליקציות לאיתור מגעים לא בא מעולם ביטחון או ההיי טק הוא הוצע לראשונה על ידי [צוות של אפידימיולוגים מאוקספורד](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).(
+(הרעיון של שימוש באפליקציות לאיתור מגעים לא בא מעולם ביטחון או ההיי טק הוא הוצע לראשונה על ידי [צוות של אפידימיולוגים מאוקספורד](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
 Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
 
@@ -665,7 +667,7 @@ But what about folks without smartphones? Or infections through doorknobs? Or "t
 
 Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
 
-בידוד חולים *עם סימפטומים* יכול להוריד את R עד 40%, ובידוד מגעים להם יכול להוריד את R עד 50%[^oxford]:
+בידוד חולים *עם סימפטומים* יכול להוריד את R ב עד 40%, ובידוד מגעים להם יכול להוריד את R ב עד 50%[^oxford]:
 
 [^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
     
@@ -686,7 +688,7 @@ Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdo
 
 We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
 
-אנחנו שומרים על R < 1 עד שיש לנו חיסון שיכול להפוך <icon s></icon> אנשים חשופים ל _I אנשים חסינים. חיסון עדר בדרך *הנכונה*:
+אנחנו שומרים על R < 1 עד שיש לנו חיסון שיכול להפוך <icon s></icon> אנשים חשופים ל <icon i></icon> אנשים חסינים. חיסון עדר בדרך *הנכונה*:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
@@ -694,7 +696,7 @@ We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></ic
 
 (Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
 
-)שימו לב: המחשבון הזה מניח שחיסון יעיל ב 100%, בפועל נצטרך לחסן *יותר* אנשים כדי לקבל חסינות עדרץ(
+(שימו לב: המחשבון הזה מניח שחיסון יעיל ב 100%, בפועל נצטרך לחסן *יותר* אנשים כדי לקבל חסינות עדר.)
 
 Okay, enough talk. Here's a simulation of:
 
@@ -704,7 +706,7 @@ Okay, enough talk. Here's a simulation of:
 4. We win.
 
 
-OK בואו נראה, הנה סימולציה של:
+OK, בואו נראה, הנה סימולציה של:
 
 1. כמה חודשים של סגר, עד שנוכל...
 2. לעבור למעקב ובידוד של מגעים, עד שנוכל...
