@@ -32,7 +32,7 @@
 
 Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
 
-אין צורך לאגור נייר טואלט, אבל יש מקום לקצת פחד בריא. השאלה היא איך משתמשי בפחד הזה כדי להתמודד עם הבעיות של עכשיו ולהתכונן למה שמצפה לנו.
+אין צורך לאגור נייר טואלט, אבל יש מקום לקצת פחד בריא. השאלה היא איך משתמשים בפחד הזה כדי להתמודד עם הבעיות של עכשיו ולהתכונן למה שמצפה לנו.
 
 Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
 
