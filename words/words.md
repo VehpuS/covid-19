@@ -3,7 +3,7 @@
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
         	What Happens Next?
-			אז מה עכשיו?
+			מה הלאה?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
 			COVID-19 Futures, Explained With Playable Simulations
@@ -22,13 +22,17 @@
 			<a href="https://ncase.me/">Nicky Case</a>
 			(art/code)
 		</div>
+		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
+			עברית:
+			<a href="https://www.linkedin.com/in/asherbarak/">אשר ברק</a>	
+		</div>
 	</div>
 </div>
 
-אם אמרו לך פעם "הדבר היחיד שצריך לפחד ממנו הוא הפחד עצמו" 
+
 "The only thing to fear is fear itself" was stupid advice.
 
-והעיקר, אמרו לנו, לא לפחד כלל
+והעיקר, אמרו לנו, לא לפחד כלל.
 
 Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
 
