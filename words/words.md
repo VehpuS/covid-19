@@ -1,36 +1,4 @@
 
-<div class="section">
-    <div>
-    	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
-        <div style="top: 70px;font-size: 75px;font-weight: bold;">
-        	What Happens Next?
-			מה הלאה?
-       	</div>
-		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
-			העתיד עם COVID-19 בסימולציות אינטראקטיביות
-		</div>
-		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
-			<b>
-				🕐 30 min play/read
-				🕐 30 דקות קריאה/משחק 
-				&nbsp;&middot;&nbsp;
-			</b>
-			by
-			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiologist)
-			&
-			<a href="https://ncase.me/">Nicky Case</a>
-			(art/code)
-		</div>
-		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
-			עברית:
-			<a href="https://www.linkedin.com/in/asherbarak/">אשר ברק</a>	
-		</div>
-	</div>
-</div>
-
-
 "The only thing to fear is fear itself" was stupid advice.
 
 והעיקר, אמרו לנו, לא לפחד כלל.
