@@ -1111,4 +1111,4 @@ Don't downplay fear to build up hope. Our fear should *team up* with our hope, l
 
 The only thing to fear is the idea that the only thing to fear is fear itself.
 
-לא לפחד כלל זה קצת הרבה, עדיף אולי לפחד קצת וחצות את הגשר הצר באופטימיות.
+לא לפחד כלל זה קצת הרבה, עדיף אולי לפחד קצת ולחצות את הגשר הצר באופטימיות.
