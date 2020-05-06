@@ -1,6 +1,4 @@
-```{=html5}
-<fold>
-```
+
 
 "The only thing to fear is fear itself" was stupid advice.
 
@@ -24,7 +22,7 @@ Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you 
 
 This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
 
-המדריך הזה (פורסם בתחילת מאי 2020 →[^timestamp]) והוא מיועד לתת לכם תקווה *וגם* פחד. כדי לנצח את COVID-19 **בדרך שגם תשמור על הבריאות הנפשית והכלכלית שלנו** אנחנו צריכים אופטימיות כדי לתכנן תכניות, ופסימיות כדי לתכנן תכניות גיבוי. כמו שאמר Gladys Bronwyn *"האופטימי ממציא את המטוס והפסימי ממציא את המצנח."*
+המדריך הזה (פורסם בתחילת מאי 2020 [^timestamp]) והוא מיועד לתת לכם תקווה *וגם* פחד. כדי לנצח את COVID-19 **בדרך שגם תשמור על הבריאות הנפשית והכלכלית שלנו** אנחנו צריכים אופטימיות כדי לתכנן תכניות, ופסימיות כדי לתכנן תכניות גיבוי. כמו שאמר Gladys Bronwyn *"האופטימי ממציא את המטוס והפסימי ממציא את המצנח."*
 
 [^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
     
@@ -71,7 +69,7 @@ If we simulate "double every 4 days" *and nothing else*, on a population startin
 
 **Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
 
-**לחצו "הפעל" כדי להתחיל את הסימולציה! תוכלו להפעילו אותה שוב אחרי שתסתיים וגם לשחק עם ההגדרות! (הסתייגויות טכניות: [^caveats])
+**לחצו 'הפעל' כדי להתחיל את הסימולציה! תוכלו להפעילו אותה שוב אחרי שתסתיים וגם לשחק עם ההגדרות!** (הסתייגויות טכניות: [^caveats])
 
 ****
 
@@ -1145,7 +1143,3 @@ Don't downplay fear to build up hope. Our fear should *team up* with our hope, l
 The only thing to fear is the idea that the only thing to fear is fear itself.
 
 לא לפחד כלל זה קצת הרבה, עדיף אולי לפחד קצת ולחצות את הגשר הצר באופטימיות.
-
-```{=html5}
-</fold>
-```
