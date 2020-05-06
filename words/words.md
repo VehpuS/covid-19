@@ -1,3 +1,6 @@
+```{=html5}
+<fold>
+```
 
 "The only thing to fear is fear itself" was stupid advice.
 
@@ -31,12 +34,14 @@ So, buckle in: we're about to experience some turbulence.
 
 נצא לדרך:
 
+```{=html5}
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
         <div>החודשים האחרונים</div>
     </div>
 </div>
+```
 
 Pilots use flight simulators to learn how not to crash planes.
 טייסים מתשמשים בסימולטורים כדי ללמוד איך לרסק מטוסים ולצאת מזה בשלום.
@@ -76,10 +81,12 @@ If we simulate "double every 4 days" *and nothing else*, on a population startin
     
     Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
 
+```{=html5}
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
-
+```
 This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
 
 זה **הגידול האקספוננציאלי**. מתחיל קטן, ואז מתפוצץ. "זאת רק שפעת" ואז "משפעת לא נהיים קברים המוניים בערים גדולות של מדינות מפותחות".
@@ -101,6 +108,8 @@ How's this change the growth of an epidemic? Let's find out:
 
 איך זה משפיע על התפשטות המגיפה? בואו נראה:
 
+```{=html5}
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
@@ -123,6 +132,8 @@ With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on
 
 [^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
 
+```{=html5}
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
@@ -145,6 +156,7 @@ Let's find out.
 <b style='color:#999999'>העקומה האפורה</b> היא *סך כל* המקרים (נוכחי + מחלימים <icon r></icon>),
 מתחילה בסך הכל ב 0.001% <icon i></icon>:
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
@@ -195,9 +207,11 @@ For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-in
 העקומות <b style='color:#ff4040'> האדומה <b style='color:#FF9393'>+ הוורודה</b> ביחד</b> הן כמות המקרים *הנוכחית* (מדבקים <icon i></icon> + נשאים <icon e></icon>),    
 <b style='color:#888'>העקומה האפורה</b> היא *סך כל* המקרים (כמות מקרים נוכחית + מחלימים <icon r></icon>):
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
+```
 
 Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
 
@@ -255,17 +269,21 @@ In our simulations – *at the start & on average* – an <icon i></icon> infect
 
 ** שחקו עם מחשבון R<sub>0</sub> הזה כדי לראות איך R<sub>0</sub> מושפע מזמן ההחלמה והזמן להדבקות חדשות:**
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
+```
 
 But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
 
 אבל צריך לזכור, ככל שיש פחות <icon s></icon>, לוקח יותר זמן ל <icon s></icon> להפוך להיות <icon i></icon>. הערך של R תלוי *עכשיו* לא רק בערך *הבסיסי* שלו (R<sub>0</sub>) אלא *גם* בכמה אנשים כבר לא <icon s></icon> פגיעים (למשל, אנשים שהחלימו ופיתחו חסינות טבעית)
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
+```
 
 When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
 
@@ -276,9 +294,11 @@ Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, an
 
 בואו נשחק שוב עם מודל SEIR, אבל הפעם נראה את R<sub>0</sub>, ערך R, והסף שממנו אנחנו משיגים חסינות עדר:
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
+```
 
 **NOTE: Total cases *does not stop* at herd immunity, but overshoots it!** And it crosses the threshold *exactly* when current cases peak. (This happens no matter how you change the settings – try it for yourself!)
 
@@ -337,6 +357,7 @@ Brace yourselves for an emergency landing...
 
 היכנו לנחיתת חירום...
 
+```{=html5}
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
@@ -344,6 +365,7 @@ Brace yourselves for an emergency landing...
 	    <div>החודשים הקרובים</div>
     </div>
 </div>
+```
 
 ...could have been worse. Here's a parallel universe we avoided:
 
@@ -365,9 +387,11 @@ Even if we *more than tripled* that capacity to 2%, here's what would've happene
 
 הנה מה שהיה קורה אם לא היינו עושים כלום, בהנחה שהיינו מגדילים את כמות המיטות ל 2% מהאוכלוסיה (יותר מפי 3):
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
+```
 
 Not good.
 
@@ -422,17 +446,21 @@ Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwa
 
 [^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
+```
 
 Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
 
 בואו נבדוק מה היה קורה אם בתחילת מרץ 2020 היינו מגבירים את שטיפת הידיים אבל מפעילים רק ריחוק חברתי *קל* - כך ש R היה נמוך יותר אבל עדיין מעל 1:
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
+```
 
 Three notes:
 
@@ -469,9 +497,11 @@ Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <
 
 בואו נראה מה קורה אם אנחנו "מרסקים" את העוקמה עם סגר של חמישה חודשים, מקטינים את <icon i></icon> כמעט לאפס ואז *סוף סוף* חוזרים לחיים נורמאליים:
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
+```
 
 Oh.
 
@@ -503,9 +533,11 @@ This solution was first suggested by the March 16 Imperial College report, and l
 
 **הנה הסימולציה:** (אחרי שהתרחיש המוקלט יסתיים, תוכלו לקבוע את הפרמטרים שלכם וגם לשחק עם הנתונים *תוך כדי* שהסימולציה פועלת! אפשר גם לעצור ולהמשיך את הסימולטור ולשנות את המהירות)
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
+```
 
 This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
 
@@ -651,9 +683,11 @@ Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining thei
 
     And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
+```
 
 Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
 
@@ -663,9 +697,11 @@ We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></ic
 
 אנחנו שומרים על R < 1 עד שיש לנו חיסון שיכול להפוך <icon s></icon> אנשים חשופים ל <icon i></icon> אנשים חסינים. חיסון עדר בדרך *הנכונה*:
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
+```
 
 (Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
 
@@ -686,9 +722,11 @@ OK, בואו נראה, הנה סימולציה של:
 3. לחסן מספיק אנשים ואז...
 4. ניצחנו.
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
+```
 
 So that's it! That's how we make an emergency landing on this plane.
 
@@ -762,9 +800,11 @@ Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission b
 
 תועלת: אפילו אם יש סיכוי של 50-50 שמסכות מקטינות את שיעור ההדבקה ב 0% או ב 70%, ממוצע התוחלת הוא עדיין 35%, כמו חצי סגר! אז בואו נניח שההשפעה היא 35% כפיצוי על אי הוודאות שלנו. (שוב, שחקו עם המספרים ובידקו את התסריט שלכם)
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
+```
 
 (other arguments for/against masks:[^mask_args])
 
@@ -796,9 +836,11 @@ For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.[^
 
 [^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
+```
 
 Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
 
@@ -827,9 +869,11 @@ Here's a simulation a "lazy case" scenario:
 2. קצת הגיינה משופרת, עם קצת איתור מגעים, עם קצת מסכות ואז...
 3. עוד סגר לאיפוס לפני שנמצא החיסון
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
+```
 
 Not to mention all the *other* interventions we could do, to further push R down:
 
@@ -869,12 +913,14 @@ So now, let's plan for some *worse* worst-case scenarios. Water landing, get you
 
 אז עכשיו, בואו נתכנן כמה תרחישים *עוד יותר גרועים*:
 
+```{=html5}
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
         <div>The Next Few Years</div>
     </div>
 </div>
+```
 
 You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
 
@@ -912,9 +958,11 @@ For these simulations, let's say it's 1 year.
 
 **הנה סימולציה שמתחילה ב 100% <icon r></icon>**, דועכת אקספוננציאלית לאנשים חשופים ללא חסינות <icon s></icon> אחרי שנה:
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
+```
 
 Return of the exponential decay!
 
@@ -930,9 +978,11 @@ Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions...
 
 בואו נעשה סימולציה של התפרצות COVID-19 בלי שום התערבות... *בהנחה שהחסינות מחזיקה מעמד שנה אחת:*
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
+```
 
 In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
 
@@ -946,9 +996,11 @@ Thankfully, because summer reduces R, it'll make the situation better:
 
 למרבה המזל, בגלל שהקיץ מפחית את R, המצב ישתפר:
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 </div>
+```
 
 Oh.
 
@@ -966,9 +1018,11 @@ Thankfully, the solution to this is pretty straightforward – just vaccinate pe
 
 **(אחרי שתפעילו את ההקלטה נסו לעשות סימולציה של קמפיין החיסונים שלכם! אפשר לעצור ולהמשיך את הסימולציה מתי שרוצים)**
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 </div>
+```
 
 But here's the scarier question:
 
@@ -1011,9 +1065,11 @@ Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most
 
 **הנה סימולציה שמניחה *שאין* חסינות ארוכת טווח, *אין* חיסון, ואין אפילו צעדי מניעה. רק הגדלה הדרגתית של קיבולת טיפול נמרץ כדי להתמודד עם השיאים**
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
+```
 
 Even under the *worst* worst-case scenario... life perseveres.
 
@@ -1029,9 +1085,11 @@ Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s
 
 **הנה סימולציה שבה תוכלו לשחק ב*כל* המספרים!**
 
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 </div>
+```
 
 This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
 
@@ -1041,12 +1099,14 @@ So finally, let's return to...
 
 אז בואו נחזור ל...
 
+```{=html5}
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
         <div>עכשיו</div>
     </div>
 </div>
+```
 
 Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
 
@@ -1085,3 +1145,7 @@ Don't downplay fear to build up hope. Our fear should *team up* with our hope, l
 The only thing to fear is the idea that the only thing to fear is fear itself.
 
 לא לפחד כלל זה קצת הרבה, עדיף אולי לפחד קצת ולחצות את הגשר הצר באופטימיות.
+
+```{=html5}
+</fold>
+```
