@@ -109,6 +109,7 @@ How's this change the growth of an epidemic? Let's find out:
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
+```
 
 This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
 
@@ -132,6 +133,7 @@ With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
+```
 
 This is the opposite of exponential growth, the **exponential decay curve.**
 
@@ -155,6 +157,7 @@ Let's find out.
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
+```
 
 And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
 
