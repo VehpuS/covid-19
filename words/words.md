@@ -80,7 +80,6 @@ If we simulate "double every 4 days" *and nothing else*, on a population startin
     Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
 
 ```{=html5}
-```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
@@ -107,7 +106,6 @@ How's this change the growth of an epidemic? Let's find out:
 איך זה משפיע על התפשטות המגיפה? בואו נראה:
 
 ```{=html5}
-```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
@@ -130,7 +128,6 @@ With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on
 
 [^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
 
-```{=html5}
 ```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
