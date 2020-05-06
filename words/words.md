@@ -3,7 +3,7 @@
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
         	What Happens Next?
-			מה יקרה עכשיו?
+			אז מה עכשיו?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
 			COVID-19 Futures, Explained With Playable Simulations
@@ -201,19 +201,19 @@ the *second*-most important idea in Epidemiology 101:
 
 Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
 
-למעשה, בואו נוסיף עוד קצת ניואנס: לפני ש<icon s></icon> נהיה <icon i></icon>, הוא נהיה <icon e></icon>נשא. זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
+למעשה, בואו נוסיף עוד קצת ניואנס: לפני ש<icon s></icon> נהיה <icon i></icon>, הוא נהיה <icon e></icon>נשא (הערת המתרגם: אני לא רופא או אפידמיולוג ולא בטוח שהמונחים פה מדוייקים. עובדים עם מה שיש). זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
 
 ![](pics/seir.png)
 
 (This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
 
-)הגרסה הזו של המודל מכונה **SEIR Model*** והאות "E" פירושה "Exposed" <icon e></icon>. (שימו לב שהמילה Exposed משמשת בשפה היום יומית לתאר מישהו שנחשף לנגיף אבל אולי לא נדבק. כאו הכוונה היא למישהו שנדבק בוודאות אבל עדיין לא מדבק)
+הגרסה הזו של המודל מכונה **SEIR Model*** והאות "E" פירושה "Exposed" <icon e></icon>. (שימו לב שהמילה Exposed משמשת בשפה היום יומית לתאר מישהו שנחשף לנגיף אבל אולי לא נדבק. כאו הכוונה היא למישהו שנדבק בוודאות אבל עדיין לא מדבק)
 
 [^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
 For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
 
-ל COVID-19, ההערכה היא שאתה E - .למשך 3 ימים, *בממוצע* נשא-אבל-לא-מדבק.
+ל COVID-19, ההערכה היא שאתה <icon e></icon> למשך 3 ימים, *בממוצע* נשא-אבל-לא-מדבק.
 מה יקרה אם נוסיף את זה לסימולציה?
 
 
@@ -228,7 +228,7 @@ For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-in
 
 Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
 
-לא הרבה השתנה, משך הזמן שבו אתה נשאר <icon e></icon> נשא משנה את היחס בין <icon e></icon>-ל-<icon i></icon>, ו*מתי* כמות המקרים תגיע לשיא, אבל אבל *הגובה* של השיא הזה, וכמות המקרים הכללית בסופו של דבר, לא משתנה.
+לא הרבה השתנה. משך הזמן שבו אתה נשאר <icon e></icon> נשא משנה את היחס בין <icon e></icon>-ל-<icon i></icon>, ו*מתי* כמות המקרים תגיע לשיא, אבל אבל *הגובה* של השיא הזה, וכמות המקרים הכללית בסופו של דבר, לא משתנה.
 
 Why's that? Because of the *first*-most important idea in Epidemiology 101:
 
@@ -253,11 +253,11 @@ Short for "Reproduction number". It's the *average* number of people an <icon i>
 
 (Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
 
-(רוב הכתבות החדשות - ואפילו חלק מהמאמרים האקדמיים! - מבלבלים בין R ל R<sub>0</sub>)
+(רוב כתבות החדשות - ואפילו חלק מהמאמרים האקדמיים! - מבלבלים בין R ל R<sub>0</sub>)
 
 The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
 
-הערך של R<sub>0</sub> לשפעת העונתית הוא בערך 1.28[^r0_flu]. זה אומר, ש*בתחילת* התפרצות של שפעת, כל <icon i></icon> מדביק  1.28 אחרים *בממוצע*. (אם נשמע לכם מוזר שהמספר הזה הוא לא מספר שלם, לאמא הממוצעת יש 2.4 ילדים. זה לא אומר שיש כל מני חצאי ילדים שמסתובבים בחוץ)
+הערך של R<sub>0</sub> לשפעת העונתית הוא בערך 1.28[^r0_flu]. זה אומר, ש*בתחילת* התפרצות של שפעת, כל <icon i></icon> מדביק  1.28 אחרים *בממוצע*. (אם נשמע לכם מוזר שהמספר הזה הוא לא מספר שלם, לאמא הממוצעת יש 2.4 ילדים. זה לא אומר שמסתובבים ברחוב כל מני חצאי ילדים.)
 
 
 [^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
@@ -273,7 +273,7 @@ The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though 
 
 In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
 
-בסימולציה שלנו - *בתחילת ההתפרצות, בממוצע* - <icon i></icon> מדביק מישהו כל 4 ימים, למשך 10 ימים. "4 ימים" נכנס לתוך "10 ימים" פעמיים וחצי. זה אומר ש - *בתחילת ההתפרצות, בממוצע* - כל <icon i></icon> ידביק 2.5 אחרים. לכן R0=2.5. (הסתייגויות:[^r0_caveats_sim])
+בסימולציה שלנו - *בתחילת ההתפרצות, בממוצע* - <icon i></icon> מדביק מישהו כל 4 ימים, למשך 10 ימים. "4 ימים" נכנס לתוך "10 ימים" פעמיים וחצי. זה אומר ש - *בתחילת ההתפרצות, בממוצע* - כל <icon i></icon> ידביק 2.5 אחרים. לכן R<sub>0</sub> = 2.5. (הסתייגויות:[^r0_caveats_sim])
 
 
 [^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
@@ -288,7 +288,7 @@ In our simulations – *at the start & on average* – an <icon i></icon> infect
 
 But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
 
-אבל צריך לזכור, ככל שיש פחות <icon s></icon>, לוקח יותר זמן ל <icon s></icon> להפוך להיות <icon i></icon>. הערך של R תלוי *עכשיו* לא רק בערך *הבסיסי* שלו (R<sub>0</sub>) אלא *גם* בכמה אנשים כבר לא <icon s></icon> חשופים (למשל, אנשים שהחלימו ופיתחו חסינות טבעית)
+אבל צריך לזכור, ככל שיש פחות <icon s></icon>, לוקח יותר זמן ל <icon s></icon> להפוך להיות <icon i></icon>. הערך של R תלוי *עכשיו* לא רק בערך *הבסיסי* שלו (R<sub>0</sub>) אלא *גם* בכמה אנשים כבר לא <icon s></icon> פגיעים (למשל, אנשים שהחלימו ופיתחו חסינות טבעית)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
@@ -313,7 +313,7 @@ Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, an
 
 This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
 
-זה קורה בגלל שכשיש יותר אנשים שאינם <icon s></icon> מסף החסינות, אנחנו מקבלים R < 1. וכש R < 1 כמות המקרים החדשים מפסיקה לגדול - וזה השיא.
+זה קורה בגלל שכשיש יותר אנשים שאינם <icon s></icon> מהכמות שדרושה לחסינות עדר, אנחנו מקבלים R < 1. וכש R < 1 כמות המקרים החדשים מפסיקה לגדול - וזה השיא.
 
 **If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
 
@@ -327,7 +327,7 @@ This is because when there are more non-<icon s></icon>s than the herd immunity 
 
 It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
 
-זה מרגיש פרדוקסלי. COVID-19 היא מחלה מדבקת ביותר, אבל כדי לעצור אותה, אנחנו צריכים לעצור יותר מ 60% מההדבקות. 60% זה אולי לא ציון מרשים במיוחד בבית הספר אבל אם R<sub>0</sub>=2.5, ונצליח להקטין אותו ב 61% נקבל R = 0.975, וזה פחות מ 1, המגיפה נעצרה! (הנוסחא המדוייקת:[^exact_formula])
+זה מרגיש פרדוקסלי. COVID-19 היא מחלה מדבקת ביותר, אבל כדי לעצור אותה, אנחנו צריכים לעצור יותר מ 60% מההדבקות. 60% זה אולי לא ציון מרשים במיוחד בבית הספר אבל אם R<sub>0</sub> = 2.5, ונצליח להקטין אותו ב 61% נקבל R = 0.975, וזה פחות מ 1, המגיפה נעצרה! (הנוסחא המדוייקת:[^exact_formula])
 
 
 [^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
@@ -350,7 +350,7 @@ It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" n
 
 *Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:
 
-*כל* מה שאנחנו עושים כדי להתמודד עם המגיפה הזו - שטיפת ידיים, ריחוק חברתית, סגרים, בידוד, מעקב מגעים, מסיכות ואפילו" חסינות עדר" *כולם* מנסים להשיג אותה מטרה:
+*כל* מה שאנחנו עושים כדי להתמודד עם המגיפה הזו - שטיפת ידיים, ריחוק חברתי, סגרים, בידוד, מעקב מגעים, מסיכות ואפילו "חסינות עדר" *כולם* מנסים להשיג אותה מטרה:
 
 Getting R < 1.
 
@@ -358,7 +358,7 @@ Getting R < 1.
 
 So now, let's use our "epidemic flight simulator" to figure this out: How can we get R < 1 in a way **that also protects our mental health *and* financial health?**
 
-עכשיו, בואו נשתמש בסימולטור שלנו כדי לבדוק איך אנחנו יכולים להגיע ל R > 1 בדרך ש**שומרת על הבריאות הנפשית והפיננסית שלנו**.
+עכשיו, בואו נשתמש בסימולטור שלנו כדי לבדוק איך אנחנו יכולים להגיע ל R < 1 בדרך ש**שומרת על הבריאות הנפשית והפיננסית שלנו**.
 
 Brace yourselves for an emergency landing...
 
@@ -390,7 +390,7 @@ Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Car
 
 Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
 
-הנה מה שהיה קורה אם לא היינו עושים כלום, בהנחה שהיינו מגדילים את כמות המיטות ל 2% (יותר מפי 3):
+הנה מה שהיה קורה אם לא היינו עושים כלום, בהנחה שהיינו מגדילים את כמות המיטות ל 2% מהאוכלוסיה (יותר מפי 3):
 
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
@@ -413,7 +413,7 @@ Even if only 0.5% of infected die – a generous assumption when there's no more
 
 (Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
 
-(הרבה אתרי חדשות ופוסטים במדיה החברתית אומרים "80%" ידבקו *בלי* להגיד "אם לא נעשה כלום". הופכים פחד לקליקים.)
+(הרבה אתרי חדשות ופוסטים במדיה החברתית אומרים "80%" ידבקו *בלי* להוסיף את ההסתייגות: "אם לא נעשה כלום". הופכים פחד לקליקים.)
 
 ###Scenario 1: Flatten The Curve / Herd Immunity
 
@@ -475,11 +475,11 @@ Three notes:
 
 3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
 
-3. אנחנו עדיין עוברים את כמות במיטות בטיפול נמרץ. למשך כמה חודשים (זכרו שהכפלנו את כמות המיטות פי שלוש לייתר ביטחון).
+3. אנחנו עדיין עוברים את כמות במיטות בטיפול נמרץ. למשך כמה חודשים. (זכרו שהכפלנו את כמות המיטות פי שלוש לייתר ביטחון)
 
 That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
 
-זה היה עוד ממצא של המחקר של אימפיריאל קולג' מה 16 למרץ ששכנע את הבריטים לוותר על התכנית הזו. כל ניסיון "לשטח את העקומה" (להקטין את R אבל עדיין R > 1) ייכשל. הדרך היחידה היא "לשבור את העקומה" (להקטין את R כך ש R < 1)
+זה היה עוד ממצא של המחקר של אימפיריאל קולג' מה 16 למרץ ששכנע את הבריטים לוותר על התכנית הזו. כל ניסיון "לשטח את העקומה" (להקטין את R אבל עדיין R > 1) ייכשל. הדרך היחידה היא "לשבור את העקומה". (להקטין את R כך ש R < 1)
 
 
 ![](pics/mitigation_vs_suppression.png)
@@ -645,7 +645,7 @@ Here's how it works:
 
 Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
 
-הפרוייקט הזה, ופרוייקטים דומים כמו TCN Protocol[^tcn] ו MIT PACT[^pact], היוו השראה ל Google ו Apple להכניס איתור מגעים  מבוסס פרטיות לתוך Android/iOS.[^gapple] ) לא סומכים על גוגל ואפל? מעולה! היופי של המערכת הזו הוא שלא צריך לסמוך על אף אחד!) בקרוב ראשויות הבריאות יבקשו מכם להוריד אפליקציה. אם הקוד פתוח וזמין והיא מבוססת על הרעיונות האלו, הורידו אותה!
+הפרוייקט הזה, ופרוייקטים דומים כמו TCN Protocol[^tcn] ו MIT PACT[^pact], היוו השראה ל Google ו Apple להכניס איתור מגעים  מבוסס פרטיות לתוך Android/iOS.[^gapple] (לא סומכים על גוגל ואפל? מעולה! היופי של המערכת הזו הוא שלא צריך לסמוך על אף אחד!) בקרוב ראשויות הבריאות יבקשו מכם להוריד אפליקציה. אם הקוד פתוח וזמין והיא מבוססת על הרעיונות האלו, הורידו אותה!
 
 [^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
@@ -655,7 +655,7 @@ Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've in
 
 But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
 
-אבל מה עם אנשים שאין להם טלפון חכם? או הדבקות דרך ידיות של דלתות וכפתורים של מעלויות? או מקרים שלא יפתחו סימפטומים בכלל? אפליקציות לאיתור מגעים לא יכולות לתפוס את כל ההדבקות... *וזה בסדר גמור!* אנחנו לא צריכים לתפוס את *כל* ההדבקות, רק 60% כדי לקבל R < 1.
+אבל מה עם אנשים שאין להם טלפון חכם? או הדבקות דרך ידיות של דלתות וכפתורים של מעליות? או מקרים שלא יפתחו סימפטומים בכלל? אפליקציות לאיתור מגעים לא יכולות לתפוס את כל ההדבקות... *וזה בסדר גמור!* אנחנו לא צריכים לתפוס את *כל* ההדבקות, רק 60% כדי לקבל R < 1.
 
 (Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
 
@@ -667,7 +667,7 @@ But what about folks without smartphones? Or infections through doorknobs? Or "t
 
 Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
 
-בידוד חולים *עם סימפטומים* יכול להוריד את R ב עד 40%, ובידוד מגעים להם יכול להוריד את R ב עד 50%[^oxford]:
+בידוד חולים *עם סימפטומים* יכול להוריד את R ב עד 40%, ובידוד המגעים שלהם יכול להוריד את R ב עד 50%[^oxford]:
 
 [^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
     
@@ -684,7 +684,7 @@ Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining thei
 
 Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
 
-לכן, אפילו אם לא נצליח לבודד 100% מהמגעים, אנחנו יכולים להגיע ל R < 1 *בלי סגר!* הרבה יותר טוב לבריאות הנפשית והכלכלית שלנו. (לגבי מי שצריך להיכנס לסגר/בידוד - הממשלות צריכות לתמוך בהם, ימי מחלה וכד' יעלו הרבה פחות מסגרים חוזרים.)
+לכן, אפילו אם לא נצליח לבודד 100% מהמגעים, אנחנו יכולים להגיע ל R < 1 *בלי סגר!* הרבה יותר טוב לבריאות הנפשית והכלכלית שלנו. (לגבי מי שצריך להיכנס לסגר/בידוד - הממשלות צריכות לתמוך בהם. ימי מחלה וכד' יעלו הרבה פחות מסגרים חוזרים)
 
 We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
 
@@ -743,7 +743,7 @@ What if R<sub>0</sub> is way higher than we thought, and the above interventions
 
 Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
 
-שימו לב, בכל מקרה הקטנה של R מקטינה את כמות המקרים הכללית ולכן חוסכת חיי אדם. אבל R < 1 היא עדיין המטרה שלנו לכן הנה עוד כמה צעדים להקטנה R:
+שימו לב, בכל מקרה הקטנה של R מקטינה את כמות המקרים הכללית ולכן חוסכת חיי אדם. אבל R < 1 היא עדיין המטרה שלנו לכן הנה עוד כמה צעדים להקטנת R:
 
 **Masks For All:**
 
@@ -771,23 +771,23 @@ To put a number on it: surgical masks *on the sick person* reduce cold & flu vir
 
 However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
 
-על כל פנים, אנחנו עדיין לא יודעים מה ההשפעה *הספציפית* של מסכות על COVID-19. במחקרים מדעיים מקובל לפרסם תוצאות רק בביטחון של 95% (מקובל...) נכון ל1 במאי 2020 מסכות עדיין לא וודאיות ב 95%.
+על כל פנים, אנחנו עדיין לא יודעים מה ההשפעה הספציפית של מסכות על COVID-19. במחקרים מדעיים מקובל לפרסם תוצאות רק בביטחון של 95% (מקובל...) נכון ל1 במאי 2020 מסכות עדיין לא וודאיות ב 95%.
 
 [^replication]: Any actual scientist who read that last sentence is probably laugh-crying right now. See: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
 
 However, pandemics are like poker. **Make bets only when you're 95% sure, and you'll lose everything at stake.** As a recent article on masks in the British Medical Journal notes,[^precautionary] we *have* to make cost/benefit analyses under uncertainty. Like so:
 
-בכל מקרה, פנדמיות הן כמו משחק פוקר. ** אם תהמר רק כשאתה בטוח ב 95% תפסיד בכל סיבוב.** כמו שמציין מאמר על מסכות ב British Medical Journal,[^precautionary] אנחנו *חייבים* לעשות ניתוחים של עלות/תועלת בתנאים של אי-וודאות. ולכן:
+בכל מקרה, פנדמיות הן כמו משחק פוקר. **אם תהמר רק כשאתה בטוח ב 95% תפסיד בכל סיבוב.** כמו שמציין מאמר על מסכות ב British Medical Journal,[^precautionary] אנחנו *חייבים* לעשות ניתוחים של עלות/תועלת בתנאים של אי-וודאות. ולכן:
 
 [^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
 Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
 
-עלות: אם מסכות בד ביתיות )ביעילות של ~2\3 ממסכות מנתחים [^homemade]), זולות מאד. אם מסכות מנתחים יותר יקרות אבל עדיין זולות למדי.
+עלות: אם מסכות בד ביתיות (ביעילות של 2/3~ ממסכות מנתחים [^homemade]), זולות מאד. אם מסכות מנתחים יותר יקרות אבל עדיין זולות למדי.
 
 Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
 
-תועלת: אפילו אם יש סיכוי של 50-50 שמסכות מקטינות את שיעור ההדבקה ב 0% או ב 70%, ממוצע התוחלת הוא עדיין 35%, כמו חצי סגר! אז בואו נניח שההשפעה היא 35% כפיצוי על אי הוודאות שלנו. (שוב, אשר לשחק עם המספרים)
+תועלת: אפילו אם יש סיכוי של 50-50 שמסכות מקטינות את שיעור ההדבקה ב 0% או ב 70%, ממוצע התוחלת הוא עדיין 35%, כמו חצי סגר! אז בואו נניח שההשפעה היא 35% כפיצוי על אי הוודאות שלנו. (שוב, שחקו עם המספרים ובידקו את התסריט שלכם)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
@@ -915,9 +915,9 @@ You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you'
 * One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
 
 * ממה שאנחנו מכירים, COVID-19 הכי דומה ל SARA שמעניק שנתיים של חסינות למבריאים .[^SARS immunity]
-* חיידקי קורונה שגורמים לצינון מעניקים 8 חודשי חסינות.[^cold immunity]
+* וירוסים ממשפחת הקורונה שגורמים לצינון מעניקים 8 חודשי חסינות.[^cold immunity]
 * ישנם דיווחים על מחלימים מ COVID-19 שנבדקו ונמצאו חיוביים שוב. לא ברור אם המקרים הללו הם טעות בבדיקה (false positive)..[^unclear]
-* מחקר אחד, לא עבר עדיין ביקורת עמיתים, הראה שקופים חסינים לפחות 28 ימים אחרי החלמה.[^monkeys]
+* מחקר אחד, שלא עבר עדיין ביקורת עמיתים, הראה שקופים חסינים לפחות 28 ימים אחרי החלמה.[^monkeys]
 
 But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
 
@@ -933,11 +933,11 @@ But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
 
 For these simulations, let's say it's 1 year.
 
-.לסימולציה הבאה נניח שאנחנו חסינים לשנה
+לסימולציה הבאה נניח שאנחנו חסינים לשנה.
 
 **Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
 
-**הנה סימולציה שמתחילה ב 100% <icon r></icon>**, דועכת אקספוננציאלית לאנשים חשופים ללא חסינות <icon s></icon> :אחרי שנה
+**הנה סימולציה שמתחילה ב 100% <icon r></icon>**, דועכת אקספוננציאלית לאנשים חשופים ללא חסינות <icon s></icon> אחרי שנה:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
@@ -963,7 +963,7 @@ Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions...
 
 In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
 
-בסימולציות הקודמות היה לנו רק שיא אחד שעבר את הקיבולת של מערכת בטיפול הנמרץ. עכשיו יש לנו כמה כאלו *ו* _I מתייתבים *באופן קבוע* על שיא הקיבולת של הטיפול הנמרץ. (שאותו הכפלנו פי שלוש כזכור)
+בסימולציות הקודמות היה לנו רק שיא אחד שעבר את הקיבולת של מערכת בטיפול הנמרץ. עכשיו יש לנו כמה כאלו *ו* <icon i></icon> מתייצבים *באופן קבוע* על שיא הקיבולת של הטיפול הנמרץ. (שאותו הכפלנו פי שלוש כזכור)
 
 R = 1, it's **endemic.**
 
@@ -983,7 +983,7 @@ Oh.
 
 Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
 
-הקיץ מחריף את הקפיצות *וגם* גורם להן לחזור בקביעות! זה קורה בגלל שהקיץ מפחית את _I החדשים, אבל אז גורם גם לירידה בכמות המחוסנים החדשים <icon r></icon> ולכן החסינות יורדת בקיץ וגורמת לקפיצה קבועה בחורף.
+הקיץ מחריף את הקפיצות *וגם* גורם להן לחזור בקביעות! זה קורה בגלל שהקיץ מפחית את <icon i></icon> החדשים, אבל אז גורם גם לירידה בכמות המחוסנים החדשים <icon r></icon> ולכן החסינות יורדת בקיץ וגורמת לקפיצה קבועה בחורף.
 
 Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
 
@@ -991,7 +991,7 @@ Thankfully, the solution to this is pretty straightforward – just vaccinate pe
 
 **(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
 
-**)אחרי שתפעילו את ההקלטה נסו לעשות סימולציה של קמפיין החיסונים שלכם! אפשר לעצור ולהמשיך את הסימולציה מתי שרוצים(**
+**(אחרי שתפעילו את ההקלטה נסו לעשות סימולציה של קמפיין החיסונים שלכם! אפשר לעצור ולהמשיך את הסימולציה מתי שרוצים)**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
@@ -1023,20 +1023,20 @@ Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most
 
 1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
 
-1( נעשה סדרה של צעדים להקטנת R שלא יהיו קשים מדי עד שנגיע לחסינות עדר (זה יגמר בהרבה מתים ונזק לריאות ולא יעבוד אם יתברר שהחסינות עוברת מהר)
+1) נעשה סדרה של צעדים להקטנת R שלא יהיו קשים מדי עד שנגיע לחסינות עדר. (זה יגמר בהרבה מתים ונזק לריאות, ולא יעבוד אם יתברר שהחסינות עוברת מהר)
 
 2) Do the R < 1 interventions forever. Contact tracing & wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests & wearing condoms became a new norm in the post-HIV world.
 
 
-2( נמשיך לעשות צעדים להקטנת R לנצח. מסיכות ובידוד מגעים יהיו חלק מהחיים בעידן שאחרי COVID-19.
+2) נמשיך לעשות צעדים להקטנת R לנצח. מסיכות ובידוד מגעים יהיו חלק מהחיים בעידן שאחרי COVID-19.
 
 3) Do the R < 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing *anyway!*) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:
 
-3( נעשה צעדים להקטנת R עד שנצליח לפתח טיפול שיגרום לCOVID-19 להיות מחלה שלא גורמת לכל כך הרבה טיפול נמרץ. (אז זה אנחנו צריכים לעשות בכל מקרה) הקטנת היקף האישפוזים פי 10 שקולה להגדלת כמות מיטת טיפול נמרץ פי 10.
+3) נעשה צעדים להקטנת R עד שנצליח לפתח טיפול שיגרום ל COVID-19 להיות מחלה שלא גורמת לכל כך הרבה טיפול נמרץ. (את זה אנחנו צריכים לעשות בכל מקרה) הקטנת היקף האישפוזים פי 10 שקולה להגדלת כמות מיטת טיפול נמרץ פי 10.
 
 **Here's a simulation of *no* lasting immunity, *no* vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:**
 
-**הנה סימולציה שמניחה *שאין* חסינות ארוכת טווח, *אין* חיסון, ואין אפילו צעדי מניה. רק הגדלה הדרגתית של קיבולת טיפול נמרץ כדי להתמודד עם השיאים**
+**הנה סימולציה שמניחה *שאין* חסינות ארוכת טווח, *אין* חיסון, ואין אפילו צעדי מניעה. רק הגדלה הדרגתית של קיבולת טיפול נמרץ כדי להתמודד עם השיאים**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
@@ -1050,7 +1050,7 @@ Even under the *worst* worst-case scenario... life perseveres.
 
 Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
 
-!אולי תרצו לנסות הנחות אחרות או לבדוק את את הדרך שלכם לצאת מהמצב הזה
+אולי תרצו לנסות הנחות אחרות או לבדוק את את הדרך שלכם לצאת מהמצב הזה.
 
 **Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
 
@@ -1062,7 +1062,7 @@ Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s
 
 This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
 
-הסימולטור הבסיסי הזה לימוד אותנו כמה דברים, וענה לנו על כמה שאלות לגבי החודשים האחרונים, החודשים הקרובים והשנים הבאו.
+הסימולטור הבסיסי הזה לימוד אותנו כמה דברים, וענה לנו על כמה שאלות לגבי החודשים האחרונים, החודשים הקרובים והשנים הבאות.
 
 So finally, let's return to...
 
@@ -1110,3 +1110,5 @@ So what does this mean for YOU, right now?
 Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
 
 The only thing to fear is the idea that the only thing to fear is fear itself.
+
+לא לפחד כלל זה קצת הרבה, עדיף אולי לפחד קצת וחצות את הגשר הצר באופטימיות.
