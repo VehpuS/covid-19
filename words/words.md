@@ -168,7 +168,7 @@ This is the the **SIR Model**,[^sir]
 the *second*-most important idea in Epidemiology 101:
 
 זה המודל המכונה **SIR Model**
-(<icon s></icon>**S**usceptible - פגיעים <icon i></icon>**I**nfectious - מדבקים <icon r></icon>**R**ecovered - מחלימים) 
+(<icon s></icon>**S**usceptible - פגיעים; <icon i></icon>**I**nfectious - מדבקים; <icon r></icon>**R**ecovered - מחלימים) 
 
 the *second*-most important idea in Epidemiology 101:
 הרעיון *השני* הכי חשוב במבוא לאפידמיולוגיה:
@@ -180,11 +180,11 @@ the *second*-most important idea in Epidemiology 101:
 
 **NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
 
-**שימו לב: הסימולציות שמשמשות לקבלת החלטות הרבה *הרבה* יותר מורכבות מזה!** אבל מודל SIR יכול עדיין להסביר כמה ממצאים מרכזיים, אפילו אם הוא מתעלם מכמה ניואנסים.
+**שימו לב: הסימולציות שמשמשות לקבלת החלטות *הרבה* יותר מורכבות מזה!** אבל מודל SIR יכול עדיין להסביר כמה ממצאים מרכזיים, אפילו אם הוא מתעלם מכמה ניואנסים.
 
 Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
 
-למעשה, בואו נוסיף עוד קצת ניואנס: לפני ש<icon s></icon> נהיה <icon i></icon>, הוא נהיה <icon e></icon>נשא (הערת המתרגם: אני לא רופא או אפידמיולוג ולא בטוח שהמונחים פה מדוייקים. עובדים עם מה שיש). זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
+למעשה, בואו נוסיף עוד קצת ניואנס: לפני ש <icon s></icon> נהיה <icon i></icon>, הוא נהיה <icon e></icon>נשא (הערת המתרגם: ייתכן  שחלק מהמונחים בעברית לא מדוייקים אם מצאתם טעות עדכנו אותנו נשמח לתקן). זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
 
 ![](pics/seir.png)
 
@@ -308,7 +308,7 @@ This is because when there are more non-<icon s></icon>s than the herd immunity 
 
 **If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
 
-** אם תצאו מהמאמר הזה אם דבר אחד - הנה הדבר הזה ** - זו דיאגרמה מסובכת במיוחד אז קחו כמה דקות להפנים אותה:
+**אם תצאו מהמאמר הזה עם דבר אחד - הנה הדבר הזה** - זו דיאגרמה מסובכת במיוחד אז קחו כמה דקות להפנים אותה:
 
 ![](pics/r3.png)
 
@@ -371,7 +371,9 @@ Brace yourselves for an emergency landing...
 
 ###Scenario 0: Do Absolutely Nothing
 
-###תרחיש 0: לא לעשות שום דבר
+```{=html5}
+<h3 id="toc_0">תרחיש 0: לא לעשות שום דבר</h3>
+```
 
 Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
 
@@ -412,7 +414,9 @@ Even if only 0.5% of infected die – a generous assumption when there's no more
 
 ###Scenario 1: Flatten The Curve / Herd Immunity
 
-###תרחיש 1: משטחים את העקומה/חסינות עדר
+```{=html5}
+<h3 id="toc_1">תרחיש 1: משטחים את העקומה/חסינות עדר</h3>
+```
 
 The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
 
@@ -489,7 +493,9 @@ That is, don't merely "flatten" the curve, *crush* the curve. For example, with 
 
 ###Scenario 2: Months-Long Lockdown
 
-###תרחיש 2: סגר למשך כמה חודשים
+```{=html5}
+<h3 id="toc_2">תרחיש 2: סגר למשך כמה חודשים</h3>
+```
 
 Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
 
@@ -519,7 +525,9 @@ So, what, do we just lockdown again & again?
 
 ###Scenario 3: Intermittent Lockdown
 
-###תרחיש 3: סגר לחלופין
+```{=html5}
+<h3 id="toc_3">תרחיש 3: סגר לחלופין</h3>
+```
 
 This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
 
@@ -543,7 +551,7 @@ This *would* keep cases below ICU capacity! And it's *much* better than an 18-mo
 
 Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
 
-כמה שנחמד לנו למתוח קווים של "קיבולת טיפול נמרץ" יש עדיין כמה דברים שהסימולטור שלנו לא תופס. למשל:
+נחמד למתוח קווים של "קיבולת טיפול נמרץ" אבל יש עדיין כמה דברים שהסימולטור שלנו לא תופס. למשל:
 
 **Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
 
@@ -569,7 +577,9 @@ How?
 
 ###Scenario 4: Test, Trace, Isolate
 
-###תרחיש 4: בדיקות, מעקב מגעים, בידודים
+```{=html5}
+<h3 id="toc_4">תרחיש 4: בדיקות, מעקב מגעים, בידודים</h3>
+```
 
 *"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
 
@@ -649,6 +659,7 @@ Here's how it works:
 Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
 
 הפרוייקט הזה, ופרוייקטים דומים כמו TCN Protocol[^tcn] ו MIT PACT[^pact], היוו השראה ל Google ו Apple להכניס איתור מגעים  מבוסס פרטיות לתוך Android/iOS.[^gapple] (לא סומכים על גוגל ואפל? מעולה! היופי של המערכת הזו הוא שלא צריך לסמוך על אף אחד!) בקרוב ראשויות הבריאות יבקשו מכם להוריד אפליקציה. אם הקוד פתוח וזמין והיא מבוססת על הרעיונות האלו, הורידו אותה!
+
 אפליקציית "המגן" המופצת בישראל מבוססת על קוד פתוח ושומרת את הנתונים על הפעילות שלכם על הטלפון כמו במודל הזה. את הנתונים על המסלול של חולי הקורונה המאומתים היא מקבלת בדרכים אחרות.
 
 [^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
@@ -729,7 +740,7 @@ OK, בואו נראה, הנה סימולציה של:
 
 So that's it! That's how we make an emergency landing on this plane.
 
-זהו ככה אנחנו מנחיתים את הסימולטור שלנו.
+זהו, ככה אנחנו מנחיתים את הסימולטור שלנו.
 
 That's how we beat COVID-19.
 
@@ -745,7 +756,9 @@ The pessimist invents the parachute.
 
 ###Scenario 4+: Masks For All, Summer, Circuit Breakers
 
-###תרחיש 4+: נשף מסכות, קיץ, איפוסים
+```{=html5}
+<h3 id="toc_5">תרחיש 4+: נשף מסכות, קיץ, איפוסים<h3>
+```
 
 What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
 
@@ -849,7 +862,8 @@ Summer alone won't make R < 1, but if we have limited resources, we can scale ba
 הקיץ לבדו לא יביא ל R < 1 אבל אם יש לנו אמצעים מוגבלים, אנחנו יכולים לשחרר חלק מההגבלות בקיץ ולהחזיר אותן בחורף.
 
 **A "Circuit Breaker" Lockdown:**
-**איפוסים:*
+
+**איפוסים:**
 
 And if all that *still* isn't enough to get R < 1... we can do another lockdown.
 
@@ -901,7 +915,7 @@ We hope these plans give you hope.
 
 **Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
 
-**גם תחת ההנחות הפסימיות יותר, *אפשר* לנצח את המגפה הזו ולשמור על הבריאות הנפשית והכלכלית שלנו.** נשתנש בסגר כדי לאפס את המצב כשנצטרך, נשמור על R < 1 עם בידוד מקרים + מעקב מגעים ששומר על הפרטיות שלנו + מסכות לכולנו... והחיים יכולים לחזור ל(סוג של) מסלולם.
+**גם תחת ההנחות הפסימיות יותר, *אפשר* לנצח את המגפה הזו ולשמור על הבריאות הנפשית והכלכלית שלנו.** נשתמש בסגר כדי לאפס את המצב כשנצטרך, נשמור על R < 1 עם בידוד מקרים + מעקב מגעים ששומר על הפרטיות שלנו + מסכות לכולנו... והחיים יכולים לחזור ל(סוג של) מסלולם.
 
 Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
 
@@ -937,12 +951,12 @@ You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you'
 
 * ממה שאנחנו מכירים, COVID-19 הכי דומה ל SARA שמעניק שנתיים של חסינות למבריאים .[^SARS immunity]
 * וירוסים ממשפחת הקורונה שגורמים לצינון מעניקים 8 חודשי חסינות.[^cold immunity]
-* ישנם דיווחים על מחלימים מ COVID-19 שנבדקו ונמצאו חיוביים שוב. לא ברור אם המקרים הללו הם טעות בבדיקה (false positive)..[^unclear]
+* ישנם דיווחים על מחלימים מ COVID-19 שנבדקו ונמצאו חיוביים שוב. לא ברור אם המקרים הללו הם טעות בבדיקה (false positive).[^unclear]
 * מחקר אחד, שלא עבר עדיין ביקורת עמיתים, הראה שקופים חסינים לפחות 28 ימים אחרי החלמה.[^monkeys]
 
 But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
 
-לגבי בני אדם, נכון ל 1 במאי 2020, "לכמה זמן" היא שאלה פתוחה.
+לגבי בני אדם, נכון ל 1 במאי 2020, "לכמה זמן?" היא שאלה פתוחה.
 
 [^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
 
@@ -992,7 +1006,7 @@ In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have 
 
 R = 1, it's **endemic.**
 
-R = 1, היא כאן להישאר
+R = 1, היא כאן להישאר.
 
 Thankfully, because summer reduces R, it'll make the situation better:
 
@@ -1036,7 +1050,7 @@ What if there's no vaccine for *years*? Or *ever?*
 
 **To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment. 
 
-** רק להבהיר: זה לא תרחיש סביר.** מרבית האפידימיולוגים מצפים לחיסון בתוך שנה או שנתיים. נכון שלא נמצא עד היום חיסון לאף נגיף ממשפחת הקורונה אבל זה בגלל שמגפת ה SARS נעצרה מהר ונגיף ההצטננות לא היה שווה את ההשקעה.
+**רק להבהיר: זה לא תרחיש סביר.** מרבית האפידימיולוגים מצפים לחיסון בתוך שנה או שנתיים. נכון שלא נמצא עד היום חיסון לאף נגיף ממשפחת הקורונה אבל זה בגלל שמגפת ה SARS נעצרה מהר ונגיף ההצטננות לא היה שווה את ההשקעה.
 
 Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
 
