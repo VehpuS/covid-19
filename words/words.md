@@ -6,7 +6,7 @@
 
 Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
 
-אין צורך לאגור נייר טואלט, אבל יש מקום לקצת פחד בריא. השאלה היא איך משתמשים בפחד הזה כדי להתמודד עם הבעיות של עכשיו ולהתכונן למה שמצפה לנו.
+אז כנון, לא צריך לאגור נייר טואלט, אבל יש מקום לקצת פחד בריא. השאלה היא איך משתמשים בפחד הזה כדי להתמודד עם הבעיות של עכשיו ולהתכונן למה שמצפה לנו.
 
 Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
 
@@ -234,7 +234,7 @@ Short for "Reproduction number". It's the *average* number of people an <icon i>
 **R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
 
 
-**R<sub>0</sub>** הןא הערך של R *בתחילת ההתפרצות, לפני שאנשים התחילו לפתח עמידות ולפני שהתחלנו לנקוט באמצעים לריסון ההתפרצות*. R<sub>0</sub> משקף טוב יותר את העוצמה של הנגיף עצמו, ועדיין הוא עשוי להשתנות ממקום למקום. למשל, R<sub>0</sub> גבוה יותר ערים צפופות מאשר ביישובים חקלאיים.
+**R<sub>0</sub>** הןא הערך של R *בתחילת ההתפרצות, לפני שאנשים התחילו לפתח עמידות ולפני שהתחלנו לנקוט באמצעים לריסון ההתפרצות*. R<sub>0</sub> משקף טוב יותר את העוצמה של הנגיף עצמו, ועדיין הוא עשוי להשתנות ממקום למקום. למשל, R<sub>0</sub> גבוה יותר בערים צפופות מאשר ביישובים חקלאיים.
 
 (Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
 
@@ -470,7 +470,7 @@ Three notes:
 
 1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
 
-1. הגישה הזו מפחיתה את *סך הכל המקרים*! **אפילו אם לא הצלחנו להגיע ל R < 1, הקטנת R עדיין מצילה חיים על ידי הפחתת כמות האנשים שיחלו מעבר לנקודה של חסינות עדר.** הרבה אנשים חושבים שאם "נשטח את העקומה" נפזר את המקרים על יותר זמן אבל לא נקטין את סך הכל המקרים. זה לא יכול להיות *בשום* מודל אפידימיולוגי.
+1. הגישה הזו מפחיתה את *סך כל המקרים*! **אפילו אם לא הצלחנו להגיע ל R < 1, הקטנת R עדיין מצילה חיים על ידי הפחתת כמות האנשים שיחלו מעבר לנקודה של חסינות עדר.** הרבה אנשים חושבים שאם "נשטח את העקומה" נפזר את המקרים על יותר זמן אבל לא נקטין את סך הכל המקרים. זה לא נכון *בשום* מודל אפידימיולוגי.
 
 2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
 
@@ -827,7 +827,7 @@ Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission b
    
    **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
     
-**אנשים יחבו מסיכות ויזלזלו בשטיפת ידיים ובריחוק חברתי.** כן, וחגורות בטיחות גורמות לאנשים להתעלם משלטי עצור, וצחצוח שיניים גורם לאנשים לאכול אבנים. אבל ברצינות, לדעתנו ההפך הוא הנכון: מסכות הן *תזכורת קבועה* למצב ולזהירות שצריך להפגין. במזרח אסיה המסכות הן סמל לסודלידריות.    
+**אנשים יחבשו מסיכות ויזלזלו בשטיפת ידיים ובריחוק חברתי.** כן, וחגורות בטיחות גורמות לאנשים להתעלם משלטי עצור, וצחצוח שיניים גורם לאנשים לאכול אבנים. אבל ברצינות, לדעתנו ההפך הוא הנכון: מסכות הן *תזכורת קבועה* למצב ולזהירות שצריך להפגין. במזרח אסיה המסכות הן סמל לסודלידריות.    
 
 Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
 
