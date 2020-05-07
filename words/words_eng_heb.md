@@ -1,6 +1,14 @@
+
+
+"The only thing to fear is fear itself" was stupid advice.
+
 והעיקר, אמרו לנו, לא לפחד כלל.
 
+Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
+
 אז כנון, לא צריך לאגור נייר טואלט, אבל יש מקום לקצת פחד בריא. השאלה היא איך משתמשים בפחד הזה כדי להתמודד עם הבעיות של עכשיו ולהתכונן למה שמצפה לנו.
+
+Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
 
 גם אנחנו (Marcel, epidemiologist + Nicky, art/code) מודאגים. לכן הכנו את הסימולטור הזה ואתם מוזמנים להשתמש בו כדי להפוך את הפחד שלכם להבנה:
 
@@ -8,11 +16,19 @@
 * **החודשים הקרובים** (סגרים, מעקב מגעים, מסיכות)
 * **השנים הקרובות** (איבוד חסינות? יהיה חיסון?)
 
+* **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
+* **The Next Few Months** (lockdowns, contact tracing, masks)
+* **The Next Few Years** (loss of immunity? no vaccine?)
+
+This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+
 המדריך הזה (פורסם בתחילת מאי 2020 [^timestamp]) והוא מיועד לתת לכם גם תקווה *וגם* פחד. כדי לנצח את COVID-19 **בדרך שגם תשמור על הבריאות הנפשית והכלכלית שלנו** אנחנו צריכים אופטימיות כדי לתכנן תכניות, ופסימיות כדי לתכנן תכניות גיבוי. כמו שאמר Gladys Bronwyn *"האופטימי ממציא את המטוס והפסימי ממציא את המצנח."*
 
 [^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
     
     **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
+
+So, buckle in: we're about to experience some turbulence.
 
 נצא לדרך:
 
