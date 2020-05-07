@@ -22,7 +22,7 @@ Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you 
 
 This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
 
-המדריך הזה (פורסם בתחילת מאי 2020 [^timestamp]) והוא מיועד לתת לכם תקווה *וגם* פחד. כדי לנצח את COVID-19 **בדרך שגם תשמור על הבריאות הנפשית והכלכלית שלנו** אנחנו צריכים אופטימיות כדי לתכנן תכניות, ופסימיות כדי לתכנן תכניות גיבוי. כמו שאמר Gladys Bronwyn *"האופטימי ממציא את המטוס והפסימי ממציא את המצנח."*
+המדריך הזה (פורסם בתחילת מאי 2020 [^timestamp]) והוא מיועד לתת לכם גם תקווה *וגם* פחד. כדי לנצח את COVID-19 **בדרך שגם תשמור על הבריאות הנפשית והכלכלית שלנו** אנחנו צריכים אופטימיות כדי לתכנן תכניות, ופסימיות כדי לתכנן תכניות גיבוי. כמו שאמר Gladys Bronwyn *"האופטימי ממציא את המטוס והפסימי ממציא את המצנח."*
 
 [^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
     
@@ -80,6 +80,7 @@ If we simulate "double every 4 days" *and nothing else*, on a population startin
     Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
 
 ```{=html5}
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
@@ -106,10 +107,10 @@ How's this change the growth of an epidemic? Let's find out:
 איך זה משפיע על התפשטות המגיפה? בואו נראה:
 
 ```{=html5}
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
-```
 
 This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
 
@@ -130,10 +131,10 @@ With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on
 [^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
 
 ```{=html5}
+```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
-```
 
 This is the opposite of exponential growth, the **exponential decay curve.**
 
@@ -157,7 +158,6 @@ Let's find out.
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
-```
 
 And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
 
@@ -190,7 +190,7 @@ Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon 
 
 (This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
 
-הגרסה הזו של המודל מכונה **SEIR Model** והאות E פירושה "Exposed" <icon e></icon>. (שימו לב שהמילה Exposed משמשת בשפה היום יומית לתאר מישהו שנחשף לנגיף אבל אולי לא נדבק. כאו הכוונה היא למישהו שנדבק בוודאות אבל עדיין לא מדבק)
+הגרסה הזו של המודל מכונה **SEIR Model*** והאות "E" פירושה "Exposed" <icon e></icon>. (שימו לב שהמילה Exposed משמשת בשפה היום יומית לתאר מישהו שנחשף לנגיף אבל אולי לא נדבק. כאו הכוונה היא למישהו שנדבק בוודאות אבל עדיין לא מדבק)
 
 [^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
@@ -1142,4 +1142,4 @@ Don't downplay fear to build up hope. Our fear should *team up* with our hope, l
 
 The only thing to fear is the idea that the only thing to fear is fear itself.
 
-לא לפחד כלל זה קצת הרבה, עדיף אולי לפחד קצת ולחצות את הגשר הצר באופטימיות.
+לא לפחד כלל זה קצת הרבה, עדיף לפחד קצת ולחצות את הגשר הצר באופטימיות.
