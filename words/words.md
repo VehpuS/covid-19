@@ -747,7 +747,7 @@ OK, בואו נראה, הנה סימולציה של:
 <!-- ###Scenario 4+: Masks For All, Summer, Circuit Breakers -->
 
 ```{=html5}
-<h3 id="toc_5">תרחיש 4+: נשף מסכות, קיץ, איפוסים<h3>
+<h3 id="toc_5">תרחיש 4+: נשף מסכות, קיץ, איפוסים</h3>
 ```
 
 <!-- What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1? -->
