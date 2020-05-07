@@ -51,7 +51,7 @@ Pilots use flight simulators to learn how not to crash planes.
 
 So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
 
- אז למה לא נבנה לנו סימולטור מגפות מאד *מאד* פשטני! בסימולטור הזה, <icon i></icon> אנשים מדבקים יכולים להפוך <icon s></icon> אנשים פגיעים למדבקים (פגיעים הם אנשים שאין להם חסינות והם גם לא חולים או מדבקים בעצמם כרגע).  
+ אז למה לא נבנה לנו סימולטור מגפות מאד *מאד* פשטני! בסימולטור הזה, <icon i></icon> אנשים מדבקים יכולים להפוך <icon s></icon> אנשים פגיעים ל<icon i></icon>מדבקים (פגיעים הם אנשים שאין להם חסינות והם גם לא חולים או מדבקים בעצמם כרגע).  
 
 ![](pics/spread.png)
 
@@ -80,14 +80,13 @@ If we simulate "double every 4 days" *and nothing else*, on a population startin
     Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
 
 ```{=html5}
-```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 ```
 This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
 
-זה **הגידול האקספוננציאלי**. מתחיל קטן, ואז מתפוצץ. "זאת רק שפעת" ואז "משפעת לא נהיים קברים המוניים בערים גדולות של מדינות מפותחות".
+זה **הגידול האקספוננציאלי**. מתחיל קטן, ואז מתפוצץ. בהתחלה: "זאת רק שפעת" ואז: "משפעת לא נהיים קברים המוניים בערים גדולות של מדינות מפותחות".
 
 ![](pics/exponential.png)
 
@@ -106,7 +105,6 @@ How's this change the growth of an epidemic? Let's find out:
 
 איך זה משפיע על התפשטות המגיפה? בואו נראה:
 
-```{=html5}
 ```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
@@ -130,7 +128,6 @@ With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on
 
 [^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
 
-```{=html5}
 ```{=html5}
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
@@ -180,7 +177,7 @@ the *second*-most important idea in Epidemiology 101:
 
 **NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
 
-**שימו לב: הסימולציות שמשמשות לקבלת החלטות הרבה*הרבה* יותר מורכבות מזה!** אבל מודל SIR יכול עדיין להסביר כמה ממצאים מרכזיים, אפילו אם הוא מתעלם מכמה ניואנסים.
+**שימו לב: הסימולציות שמשמשות לקבלת החלטות הרבה *הרבה* יותר מורכבות מזה!** אבל מודל SIR יכול עדיין להסביר כמה ממצאים מרכזיים, אפילו אם הוא מתעלם מכמה ניואנסים.
 
 Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
 
@@ -242,7 +239,7 @@ Short for "Reproduction number". It's the *average* number of people an <icon i>
 
 The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
 
-הערך של R<sub>0</sub> לשפעת העונתית הוא בערך 1.28[^r0_flu]. זה אומר, ש*בתחילת* התפרצות של שפעת, כל <icon i></icon> מדביק  1.28 אחרים *בממוצע*. (אם נשמע לכם מוזר שהמספר הזה הוא לא מספר שלם, לאמא הממוצעת יש 2.4 ילדים. זה לא אומר שמסתובבים ברחוב כל מני חצאי ילדים.)
+הערך של R<sub>0</sub> לשפעת העונתית הוא בערך 1.28[^r0_flu]. זה אומר, ש*בתחילת* התפרצות של שפעת, כל <icon i></icon> מדביק  1.28 אחרים *בממוצע*. (אם נשמע לכם מוזר שהמספר הזה הוא לא מספר שלם, לאמא הממוצעת בעולם יש 2.4 ילדים, ובישראל כ 3.2. זה לא אומר שמסתובבים ברחוב כל מני חצאי ילדים.)
 
 
 [^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
@@ -649,6 +646,7 @@ Here's how it works:
 Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
 
 הפרוייקט הזה, ופרוייקטים דומים כמו TCN Protocol[^tcn] ו MIT PACT[^pact], היוו השראה ל Google ו Apple להכניס איתור מגעים  מבוסס פרטיות לתוך Android/iOS.[^gapple] (לא סומכים על גוגל ואפל? מעולה! היופי של המערכת הזו הוא שלא צריך לסמוך על אף אחד!) בקרוב ראשויות הבריאות יבקשו מכם להוריד אפליקציה. אם הקוד פתוח וזמין והיא מבוססת על הרעיונות האלו, הורידו אותה!
+אפליקציית "המגן" המופצת בישראל מבוססת על קוד פתוח ושומרת את הנתונים על הפעילות שלכם על הטלפון כמו במודל הזה. את הנתונים על המסלול של חולי הקורונה המאומתים היא מקבלת בדרכים אחרות.
 
 [^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
@@ -806,19 +804,22 @@ Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission b
 
 (other arguments for/against masks:[^mask_args])
 
-(:[^mask_args]עוד טיעונים בעד ונגד מסכות)
-
-[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
 
    **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
+
+**קשה לחבוש מסיכות נכון.** קשה גם לשטוף ידיים לפי ההנחיות של משרד הבריאות אבל אנחנו עדיין עושים את זה, בגלל ששטיפת ידיים לא מושלמת עדיפה על כלום.
    
    **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
     
-    
+**אנשים יחבו מסיכות ויזלזלו בשטיפת ידיים ובריחוק חברתי.** כן, וחגורות בטיחות גורמות לאנשים להתעלם משלטי עצור, וצחצוח שיניים גורם לאנשים לאכול אבנים. אבל ברצינות, לדעתנו ההפך הוא הנכון: מסכות הן *תזכורת קבועה* למצב ולזהירות שצריך להפגין. במזרח אסיה המסכות הן סמל לסודלידריות.    
 
 Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
 
 מסכות *לבדן* לא יביאו אותנו ל R < 1.  אבל אם שטיפת ידים ובידוד מגעים יבאו אותנו ל R = 1.10, אפילו אם רק שליש מהאנשים יחבשו מסכות הם יעבירו אותנו מעבר ל R < 1, המגיפה נעצרה!
+
+(עוד טיעונים בעד ונגד מסכות:[^mask_args])
+
+[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
 
 **Summer:**
 
@@ -1132,7 +1133,7 @@ So what does this mean for YOU, right now?
 
 **For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
 
-**לקובעי מדיניות:** דאגו לתמיכה באנשים שנאלצים להתבודד. דאגו למעקב אחרי מגעים, באמצעות אפליקציות רלוונטיות. עודדו השקעה בדברים שצריך לפתח כמו...
+**לקובעי מדיניות:** דאגו לתמיכה באנשים שנאלצים להיות בבידוד. דאגו למעקב אחרי מגעים באמצעות אפליקציות רלוונטיות. עודדו השקעה בדברים שצריך לפתח כמו...
 
 **For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope. 
 
