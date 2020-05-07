@@ -2,4 +2,4 @@ Convertions:
 - https://markdowntohtml.com/ seems to support Hebrew but not footnotes
 - https://pandoc.org/try/ can do Hebrew and footnotes but requires install
 
-pandoc words.md -f markdown+raw_attribute -t html -o words.html
+pandoc words.md -f markdown+raw_attribute -t html -o words.html --strip-comments
