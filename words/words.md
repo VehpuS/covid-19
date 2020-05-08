@@ -347,7 +347,7 @@
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Months</div>
+        <!-- <div>The Next Few Months</div> -->
 	    <div>החודשים הקרובים</div>
     </div>
 </div>
@@ -937,8 +937,8 @@ OK, קיץ זה לא משהו שאנחנו יכולים לעשות, אבל הק�
 <!-- * There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear] -->
 <!-- * One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys] -->
 
-* ממה שאנחנו מכירים, COVID-19 הכי דומה ל SARA שמעניק שנתיים של חסינות למבריאים .[^SARS immunity]
-* וירוסים ממשפחת הקורונה שגורמים לצינון מעניקים 8 חודשי חסינות.[^cold immunity]
+* ממה שאנחנו מכירים, COVID-19 הכי דומה ל SARA שמעניק שנתיים של חסינות למבריאים .[^SARSimmunity]
+* וירוסים ממשפחת הקורונה שגורמים לצינון מעניקים 8 חודשי חסינות. [^coldimmunity] 
 * ישנם דיווחים על מחלימים מ COVID-19 שנבדקו ונמצאו חיוביים שוב. לא ברור אם המקרים הללו הם טעות בבדיקה (false positive).[^unclear]
 * מחקר אחד, שלא עבר עדיין ביקורת עמיתים, הראה שקופים חסינים לפחות 28 ימים אחרי החלמה.[^monkeys]
 
@@ -946,9 +946,9 @@ OK, קיץ זה לא משהו שאנחנו יכולים לעשות, אבל הק�
 
 לגבי בני אדם, נכון ל 1 במאי 2020, "לכמה זמן?" היא שאלה פתוחה.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^SARSimmunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^coldimmunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
 [^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
@@ -1122,7 +1122,7 @@ R = 1, היא כאן להישאר.
 
 צוותים של קובעי מדינות ואפידימיולוגים הגיעו להסכמה לגבי הדרך שבה נביס את COVID-19 תוך כדי שמירה על החיים שלנו ועל החרויות שלנו.
 
-Here's the rough idea, with some (less-consensus) backup plans:
+<!-- Here's the rough idea, with some (less-consensus) backup plans: -->
 
 הנה התמצית:
 
