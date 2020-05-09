@@ -50,6 +50,8 @@
 
  אז למה לא נבנה לנו סימולטור מגפות מאד *מאד* פשטני! בסימולטור הזה, <icon i></icon> אנשים מדבקים יכולים להפוך <icon s></icon> אנשים פגיעים ל<icon i></icon>מדבקים (פגיעים הם אנשים שאין להם חסינות והם גם לא חולים או מדבקים בעצמם כרגע).  
 
+ (הערת המתרגם: אשמח למשוב מקצועי על התרגום בכלל ועל המונחים הרפואיים בפרט. הכי נח [בטוויטר](https://twitter.com/AsherBarak))
+
 ![](pics/spread.png)
 
 <!-- It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation) -->
@@ -177,7 +179,7 @@
 
 <!-- Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*. -->
 
-למעשה, בואו נוסיף עוד קצת ניואנס: לפני ש <icon s></icon> נהיה <icon i></icon>, הוא נהיה <icon e></icon>נשא (הערת המתרגם: ייתכן  שחלק מהמונחים בעברית לא מדוייקים אם מצאתם טעות עדכנו אותנו נשמח לתקן). זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
+למעשה, בואו נוסיף עוד קצת ניואנס: לפני ש <icon s></icon> נהיה <icon i></icon>, הוא נהיה <icon e></icon>נשא. זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
 
 ![](pics/seir.png)
 
@@ -519,7 +521,7 @@ That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc
 
 <!-- This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard] -->
 
-התרחיש הזה הוצע בנייר של האימפריאל קולג' מה 16 למרץ ושוב בנייר של הארוורד. [^lockdown_harvard]
+התרחיש הזה הוצע במאמר של האימפריאל קולג' מה 16 למרץ ושוב בנייר של הארוורד. [^lockdown_harvard]
 
 [^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
@@ -937,7 +939,7 @@ OK, קיץ זה לא משהו שאנחנו יכולים לעשות, אבל הק�
 <!-- * There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear] -->
 <!-- * One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys] -->
 
-* ממה שאנחנו מכירים, COVID-19 הכי דומה ל SARA שמעניק שנתיים של חסינות למבריאים .[^SARSimmunity]
+* ממה שאנחנו מכירים, COVID-19 הכי דומה ל SARS שמעניק שנתיים של חסינות למבריאים .[^SARSimmunity]
 * וירוסים ממשפחת הקורונה שגורמים לצינון מעניקים 8 חודשי חסינות. [^coldimmunity] 
 * ישנם דיווחים על מחלימים מ COVID-19 שנבדקו ונמצאו חיוביים שוב. לא ברור אם המקרים הללו הם טעות בבדיקה (false positive).[^unclear]
 * מחקר אחד, שלא עבר עדיין ביקורת עמיתים, הראה שקופים חסינים לפחות 28 ימים אחרי החלמה.[^monkeys]
