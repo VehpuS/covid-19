@@ -179,7 +179,7 @@
 
 <!-- Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*. -->
 
-למעשה, בואו נוסיף עוד קצת ניואנס: לפני ש <icon s></icon> נהיה <icon i></icon>, הוא נהיה <icon e></icon>נשא. זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
+למעשה, בואו נוסיף עוד קצת ניואנס: לפני ש <icon s></icon> נהיה <icon i></icon>, הוא נהיה <icon e></icon>חולה סמוי. זה השלב שבו הוא כבר *נדבק* בוירוס, אבל הוא עדיין לא *מדביק* אחרים.
 
 ![](pics/seir.png)
 
@@ -191,13 +191,13 @@
 
 <!-- For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation? -->
 
-ל COVID-19, ההערכה היא שאתה <icon e></icon> למשך 3 ימים, *בממוצע* נשא-אבל-לא-מדבק.[^latent]
+ל COVID-19, ההערכה היא שאתה <icon e></icon> למשך 3 ימים, *בממוצע* חולה סמוי-אבל-לא-מדבק.[^latent]
 מה יקרה אם נוסיף את זה לסימולציה?
 
 
 [^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-העקומות <b style='color:#ff4040'> האדומה <b style='color:#FF9393'>+ הוורודה</b> ביחד</b> הן כמות המקרים *הנוכחית* (מדבקים <icon i></icon> + נשאים <icon e></icon>),    
+העקומות <b style='color:#ff4040'> האדומה <b style='color:#FF9393'>+ הוורודה</b> ביחד</b> הן כמות המקרים *הנוכחית* (מדבקים <icon i></icon> + חולים סמויים <icon e></icon>),    
 <b style='color:#888'>העקומה האפורה</b> היא *סך כל* המקרים (כמות מקרים נוכחית + מחלימים <icon r></icon>):
 
 ```{=html5}
@@ -208,7 +208,7 @@
 
 <!-- Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same. -->
 
-לא הרבה השתנה. משך הזמן שבו אתה נשאר <icon e></icon> נשא משנה את היחס בין <icon e></icon>-ל-<icon i></icon>, ו*מתי* כמות המקרים תגיע לשיא, אבל אבל *הגובה* של השיא הזה, וכמות המקרים הכללית בסופו של דבר, לא משתנה.
+לא הרבה השתנה. משך הזמן שבו אתה נשאר <icon e></icon> חולה סמוי משנה את היחס בין <icon e></icon>-ל-<icon i></icon>, ו*מתי* כמות המקרים תגיע לשיא, אבל אבל *הגובה* של השיא הזה, וכמות המקרים הכללית בסופו של דבר, לא משתנה.
 
 <!-- Why's that? Because of the *first*-most important idea in Epidemiology 101: -->
 
@@ -618,7 +618,7 @@ That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc
 
 <!-- (It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.) -->
 
-(השיטה הזו מאפשרת לנו גם להשתמש בבדיקות שיש לנו בצורה יעילה יותר ולמצוא נשאים בלי סימפטומים <icon i></icon> בלי לבדוק את כל האוכלוסיה.)
+(השיטה הזו מאפשרת לנו גם להשתמש בבדיקות שיש לנו בצורה יעילה יותר ולמצוא חולים סמויים בלי סימפטומים <icon i></icon> בלי לבדוק את כל האוכלוסיה.)
 
 <!-- Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps. -->
 
