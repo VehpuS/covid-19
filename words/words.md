@@ -921,7 +921,7 @@ OK, קיץ זה לא משהו שאנחנו יכולים לעשות, אבל הק�
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>השנים הקרובות</div>
     </div>
 </div>
 ```
