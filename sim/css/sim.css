@@ -317,8 +317,8 @@ icon[r]{
 	background-size: auto 100%;
 	display: inline-block;
 
-	/*position: relative;*/
-	vertical-align: middle;
+	position: relative;
+	/* vertical-align: middle; */
 	top: 6px;
 }
 .control_icon[continue]{
