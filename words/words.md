@@ -228,7 +228,7 @@
 
 <!-- **R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas. -->
 
-**R<sub>0</sub>** הןא הערך של R *בתחילת ההתפרצות, לפני שאנשים התחילו לפתח עמידות ולפני שהתחלנו לנקוט באמצעים לריסון ההתפרצות*. R<sub>0</sub> משקף טוב יותר את העוצמה של הנגיף עצמו, ועדיין הוא עשוי להשתנות ממקום למקום. למשל, R<sub>0</sub> גבוה יותר בערים צפופות מאשר ביישובים חקלאיים.
+**R<sub>0</sub>**הוא הערך של R *בתחילת ההתפרצות, לפני שאנשים התחילו לפתח עמידות ולפני שהתחלנו לנקוט באמצעים לריסון ההתפרצות*. R<sub>0</sub> משקף טוב יותר את העוצמה של הנגיף עצמו, ועדיין הוא עשוי להשתנות ממקום למקום. למשל, R<sub>0</sub> גבוה יותר בערים צפופות מאשר ביישובים חקלאיים.
 
 <!-- (Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad) -->
 
@@ -387,12 +387,10 @@
 
 לא טוב.
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
-(remember: total cases *overshoots* herd immunity)
-
+<!-- That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected.  -->
+<!-- (remember: total cases *overshoots* herd immunity) -->
 
 זה מה שגילה [המחקר של אימפיריאל קולג' מה-16 למרץ](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) אם לא נעשה כלום יגמרו לנו המיטות במצב שבו 80% מהאוכלוסיה נדבקה.
-
 
 <!-- Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.* -->
 
