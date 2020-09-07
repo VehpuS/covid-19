@@ -158,6 +158,7 @@ sub{
     text-align: center;
 }
 .footnotes{
+	direction: rtl;
 	display: none;
 	width: 800px;
 	font-size: 16px;
@@ -168,12 +169,14 @@ sub{
 	display: none;
 }
 #show_feetnotes_button{
+	direction: rtl;
 	cursor: pointer;
 }
 #show_feetnotes_button:hover{
 	color: #fff;
 }
 #shown_feetnotes{
+	direction: rtl;
 	display: none;
 }
 #footnotes_container ol{
@@ -190,6 +193,7 @@ sub{
 	font-size: 12px;
 	text-align: right;
 	padding: 0.5em 1.5em;
+	direction: rtl;
 }
 
 .littlefoot-footnote__content {
